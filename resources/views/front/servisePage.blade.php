@@ -34,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Главный</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/catigory">Категории</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <span class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -55,14 +58,14 @@
                     </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/servise">Услуги</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="/gallery">Галерея</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="/contact" class="nav-link">Контакт</a>
-                      </li>
+                        <a class="nav-link active" href="/servise">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link">Контакт</a>
+                    </li>
                     <li class="nav-item">
                         <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
                             onclick="showRu()">Uz</p>
@@ -80,6 +83,7 @@
             ru.style.display = "block";
             uz.style.display = "none";
         }
+
         function showUz() {
             var uz = document.querySelector(".lang-uz");
             var ru = document.querySelector(".lang-ru");
@@ -236,12 +240,24 @@
     </footer>
     <!-- footer -->
 
+    {{-- connect with me --}}
+    <div class="body">
+        <div class='phone'>
+            <a href="tel:+998337730580" class="fas fa-phone fa-1x"></a>
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    {{-- connect with me --}}
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     <!-- anime -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init();</script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

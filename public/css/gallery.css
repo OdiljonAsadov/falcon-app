@@ -489,9 +489,107 @@ footer h6 a:hover {
   text-decoration: underline;
 }
 
+/* connect with me */
+
+:root {
+  --pink: #45f500;
+  --animation-curve: cubic-bezier(0.12, 0.7, 0.74, 0.71);
+}
+
+.body {
+  height: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 55px;
+  right: 75px;
+}
+
+.phone {
+  z-index: 100;
+  background-color: var(--pink);
+  animation: phone 1s var(--animation-curve) infinite alternate-reverse;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px white solid;
+}
+
+.phone a {
+  color: #fff;
+  font-size: 6px;
+  animation: wiggle 2s linear infinite;
+  text-decoration: none;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.phone, .circle1, .circle2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(0, 255, 0);
+  position: absolute;
+  animation: scaling 2s var(--animation-curve) infinite;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(2);
+    background-color: var(--pink);
+  }
+  100% {
+    transform: scale(5);
+    background-color: rgba(57, 245, 0, 0);
+  }
+}
+
+@keyframes phone {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(2.5);
+  }
+}
+
+.circle1 {
+  animation-delay: 0s;
+}
+
+.circle2 {
+  animation-delay: 1s;
+}
+
 /* for 1024 1440 */
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .right-nav {
+    width: 50%;
+  }
   .ourHistory h1 {
     font-size: 32px;
   }
@@ -500,6 +598,10 @@ footer h6 a:hover {
 /* for 768 1023  */
 
 @media(min-width:768px) and (max-width:1023px) {
+  .right-nav {
+    width: 50%;
+  }
+
   .ourHistory h1 {
     font-size: 32px;
   }
@@ -546,7 +648,6 @@ footer h6 a:hover {
   .gallery img {
     width: 100%;
   }
-
   footer {
     padding: 90px 15px;
   }
@@ -569,36 +670,30 @@ footer h6 a:hover {
 
 /* for 320 374 */
 
-@media(min-width: 320px) and (max-width: 374px){
+@media(min-width: 320px) and (max-width: 374px) {
   .ourHistory h1 {
     font-size: 32px;
-    line-height: 25px;
+    line-height: 36px;
   }
   .gallery img {
     width: 100%;
   }
-
-  footer{
+  footer {
     padding: 90px 15px;
-}
-
-footer h4, footer h1{
+  }
+  footer h4, footer h1 {
     font-size: 20px;
-}
-
-footer h1{
+  }
+  footer h1 {
     margin-top: 30px;
-}
-
-footer p{
+  }
+  footer p {
     font-size: 16px;
-}
-
-footer h6{
+  }
+  footer h6 {
     font-size: 12px;
-}
-
-footer .icons a{
+  }
+  footer .icons a {
     font-size: 30px;
-}
+  }
 }

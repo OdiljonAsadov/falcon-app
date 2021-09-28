@@ -28,3 +28,6 @@ Route::get('/gallery', function () {
 Route::get('/servise', function () {
     return view('front.servisePage');
 });
+Route::get('/catigory', function () {
+    return view('front.catigoryPage');
+});

@@ -34,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Главный</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/catigory">Категории</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <span class="nav-link active dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -259,6 +262,16 @@
     </footer>
     <!-- footer -->
 
+    {{-- connect with me --}}
+    <div class="body">
+        <div class='phone'>
+            <a href="tel:+998337730580" class="fas fa-phone fa-1x"></a>
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    {{-- connect with me --}}
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
