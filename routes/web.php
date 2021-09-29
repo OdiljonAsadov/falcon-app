@@ -31,3 +31,26 @@ Route::get('/servise', function () {
 Route::get('/catigory', function () {
     return view('front.catigoryPage');
 });
+
+Route::get('/admin',function(){
+    return view('index');
+});
+
+// -- Category--//
+
+Route::get('/category','CategoryController@index');
+Route::get('/category/add','CategoryController@create');
+Route::post('/category/add','CategoryController@store');
+Route::get('/category/edit/{id}','CategoryController@edit');
+Route::post('/category/edit/{id}','CategoryController@update');
+Route::get('/category/delete/{id}','CategoryController@destroy');
+
+// -- Information -- //
+
+Route::get('/information','InformationController@index');
+Route::get('/information/add','InformationController@create');
+Route::post('/information/add','InformationController@store');
+Route::get('/information/edit/{id}','InformationController@edit');
+Route::post('/information/edit/{id}','InformationController@update');
+Route::get('/information/delete/{id}','InformationController@destroy');
+Route::get('/information/show/{id}','InformationController@show');
