@@ -64,7 +64,7 @@
                         <a class="nav-link" href="/gallery">Галерея</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contact" class="nav-link">Контакт</a>
+                        <a href="/contact" class="nav-link active">Контакт</a>
                     </li>
                     <li class="nav-item">
                         <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
@@ -123,7 +123,8 @@
                                         <span class="fa fa-phone"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Телефон:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                        <p><span>Телефон:</span> <a href="callto:+998909307218">+998 (90) 930 72 18 </a></p>
+                                        <p><span>Телефон:</span> <a href="callto:+998909588172">+998 (90) 958 81 72 </a></p>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +135,7 @@
                                     </div>
                                     <div class="text">
                                         <p><span>Эл. адрес:</span> <a
-                                                href="mailto:avlomberdioglid@gmail.com">FrDevD.T.A.com</a></p>
+                                                href="mailto:#">Falcon.uz</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +145,7 @@
                                         <span class="fa fa-globe"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Веб-сайт</span> <a href="#">Falcon.uz</a></p>
+                                        <p><span>Веб-сайт</span> <a href="Falcon.uz">Falcon.uz</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -224,7 +225,8 @@
         <div class="text-center">
             <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
+                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
             <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">
