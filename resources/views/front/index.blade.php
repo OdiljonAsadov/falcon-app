@@ -24,7 +24,7 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="/">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -98,23 +98,23 @@
         <div class="slider-inner">
             <ul>
                 <li>
-                    <a class="ns-img img-fluid" href="./images/slide3.jpg"></a>
+                    <a class="ns-img img-fluid" href="./images/forslide1.gif"></a>
                     <div class="caption">Безопаснее</div>
                 </li>
                 <li>
-                    <a class="ns-img img-fluid" href="./images/slide1.jfif"></a>
+                    <a class="ns-img img-fluid" href="./images/forslide2.jpg"></a>
                     <div class="caption">Комфортный</div>
                 </li>
                 <li>
-                    <a class="ns-img img-fluid" href="./images/przemyslaw-marczynski-7B01TTW9Lbw-unsplash.jpg"></a>
+                    <a class="ns-img img-fluid" href="./images/forslide3.jpg"></a>
                     <div class="caption">Милый</div>
                 </li>
                 <li>
-                    <a class="ns-img img-fluid" href="./images/AyderL.jpg"></a>
+                    <a class="ns-img img-fluid" href="./images/forslide4.jfif"></a>
                     <div class="caption">Качественный</div>
                 </li>
                 <li>
-                    <a class="ns-img img-fluid" href="./images/yu-hai-ykI7BeSWgMo-unsplash.jpg"></a>
+                    <a class="ns-img img-fluid" href="./images/forslide5.jpg"></a>
                     <div class="caption">Сильный</div>
                 </li>
             </ul>
@@ -338,9 +338,9 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>4578 Marmora Road, Glasgow D04 89GR</h4>
+            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:#">800-2345-6789</a>
+                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
             </h1>
             <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">
@@ -350,7 +350,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>TinyTrust3119 © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
             </h6>
         </div>
     </footer>

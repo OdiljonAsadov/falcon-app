@@ -23,7 +23,7 @@
   <div class="nawbar container-fluid">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="/">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="far fa-bars"></i>
@@ -118,22 +118,22 @@
   <!-- footer -->
   <footer>
     <div class="text-center">
-      <h4>4578 Marmora Road, Glasgow D04 89GR</h4>
-      <h1>
-        <span>Tел:</span> <a href="callto:#">800-2345-6789</a>
-      </h1>
-      <p>7 дней в неделю с 9:00 до 19:00</p>
-      <div class="icons">
-        <a href="#" class="fab fa-facebook-f fa-2x"></a>
-        <a href="#" class="fab fa-twitter fa-2x"></a>
-        <a href="#" class="fab fa-google-plus-g fa-2x"></a>
-        <a href="#" class="fab fa-instagram fa-2x"></a>
-      </div>
-      <h6>
-        <span>TinyTrust3119 © 2021. </span><a href="#">Политика конфиденциальности</a>
-      </h6>
+        <h4>43 Tafakkur ko'chasi, Тошкент</h4>
+        <h1>
+            <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
+        </h1>
+        <p>7 дней в неделю с 9:00 до 19:00</p>
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f fa-2x"></a>
+            <a href="#" class="fab fa-twitter fa-2x"></a>
+            <a href="#" class="fab fa-google-plus-g fa-2x"></a>
+            <a href="#" class="fab fa-instagram fa-2x"></a>
+        </div>
+        <h6>
+            <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
+        </h6>
     </div>
-  </footer>
+</footer>
   <!-- footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
