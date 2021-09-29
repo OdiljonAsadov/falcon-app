@@ -24,7 +24,8 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Navbar</a>
+                <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
+                        style="height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -35,44 +36,26 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Главный</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servise">Услуги</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <span class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                O нас
-                            </span>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/about">O нас</a></li>
-                                <li class="dropdown-item click">
-                                    <span>Наведите на меня</span>
-                                    <div class="click-content">
-                                        <a href="#">Lorem, ipsum.</a>
-                                        <br>
-                                        <a href="#">Lorem, ipsum.</a>
-                                    </div>
-                                </li>
-                                <hr class="dropdown-divider">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery">Галерея</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servise">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gallery">Галерея</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact" class="nav-link">Контакт</a>
-                    </li>
-                    <li class="nav-item">
-                        <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
-                            onclick="showRu()">Uz</p>
-                        <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;" onclick="showUz()">
-                            Ру</p>
-                    </li>
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link">Контакт</a>
+                        </li>
+                        <li class="nav-item">
+                            <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
+                                onclick="showRu()">Uz</p>
+                            <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
+                                onclick="showUz()">
+                                Ру</p>
+                        </li>
                     </ul>
                 </div>
         </nav>
@@ -210,7 +193,7 @@
                     <a href="#">Подробнее</a>
                 </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg1">
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg5">
                 <div class="product">
                     <h4>Покрытие детской площадки</h4>
                     <p>Эта система состоит из основы из 100% переработанного SBR (бутадиен-стирольного каучука).
@@ -218,7 +201,7 @@
                     <a href="#">Подробнее</a>
                 </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg2">
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg6">
                 <div class="product">
                     <h4>Переработанная резиновая плитка</h4>
                     <p>Предлагаем полный выбор плиток для удовлетворения конкретных потребностей вашего объекта, в том
@@ -227,7 +210,7 @@
                     <a href="#">Подробнее</a>
                 </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg3">
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg7">
                 <div class="product">
                     <h4>Поверхность водной игры</h4>
                     <p>Нескользящее покрытие для открытых и закрытых аквапарков, брызг, бассейнов и зон спа
@@ -235,7 +218,7 @@
                     <a href="#">Подробнее</a>
                 </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg4">
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg8">
                 <div class="product">
                     <h4>Эластофлор Ролл-Заливка</h4>
                     <p>Исключительная опора, точная реакция на мяч и идеальная амортизация.</p>
@@ -255,27 +238,27 @@
                 <div class="links row" data-aos="fade-right">
                     <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                         <ul>
-                            <li>Детские площадки</li>
-                            <li>Подъездные пути</li>
-                            <li>Полы в гараже</li>
-                            <li>Пешеходные дорожки</li>
-                            <li>Окружение бассейна или терраса у бассейна</li>
-                            <li>Дорожки для гольфа</li>
-                            <li>Зоны с джакузи</li>
-                            <li>Полы в спортзале</li>
+                            <li><a href="#">Детские площадки </a></li>
+                            <li><a href="#">Подъездные пути </a></li>
+                            <li><a href="#">Полы в гараже </a></li>
+                            <li><a href="#">Пешеходные дорожки </a></li>
+                            <li><a href="#">Окружение бассейна или терраса у бассейна </a></li>
+                            <li><a href="#">Дорожки для гольфа </a></li>
+                            <li><a href="#">Зоны с джакузи </a></li>
+                            <li><a href="#">Полы в спортзале </a></li>
                         </ul>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li>Подвалы</li>
-                            <li>Детский сад</li>
-                            <li>Пандусы для инвалидных колясок</li>
-                            <li>Арены</li>
-                            <li>Патио</li>
-                            <li>Курсы Mini-Putt</li>
-                            <li>Ступени лестницы</li>
-                            <li>Балконы</li>
-                            <li>И более</li>
+                            <li><a href="#"> Подвалы </a></li>
+                            <li><a href="#"> Детский сад </a></li>
+                            <li><a href="#"> Пандусы для инвалидных колясок </a></li>
+                            <li><a href="#"> Арены </a></li>
+                            <li><a href="#"> Патио </a></li>
+                            <li><a href="#"> Курсы Mini-Putt </a></li>
+                            <li><a href="#"> Ступени лестницы </a></li>
+                            <li><a href="#"> Балконы </a></li>
+                            <li><a href="#"> И более </a></li>
                         </ul>
                     </div>
                 </div>
@@ -306,27 +289,27 @@
                 <div class="links row" data-aos="zoom-in-up">
                     <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                         <ul>
-                            <li>Детские площадки</li>
-                            <li>Подъездные пути</li>
-                            <li>Полы в гараже</li>
-                            <li>Walkways</li>
-                            <li>Окружение бассейна или терраса у бассейна</li>
-                            <li>Дорожки для гольфа</li>
-                            <li>Зоны с джакузи</li>
-                            <li>Полы в спортзале</li>
+                            <li><a href="#">Детские площадки </a></li>
+                            <li><a href="#">Подъездные пути </a></li>
+                            <li><a href="#">Полы в гараже </a></li>
+                            <li><a href="#">Пешеходные дорожки </a></li>
+                            <li><a href="#">Окружение бассейна или терраса у бассейна </a></li>
+                            <li><a href="#">Дорожки для гольфа </a></li>
+                            <li><a href="#">Зоны с джакузи </a></li>
+                            <li><a href="#">Полы в спортзале </a></li>
                         </ul>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
+                    <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li>Подвалы</li>
-                            <li>Детский сад</li>
-                            <li>Пандусы для инвалидных колясок</li>
-                            <li>Арены</li>
-                            <li>Патио</li>
-                            <li>Курсы Mini-Putt</li>
-                            <li>Ступени лестницы</li>
-                            <li>Балконы</li>
-                            <li>И более</li>
+                            <li><a href="#"> Подвалы </a></li>
+                            <li><a href="#"> Детский сад </a></li>
+                            <li><a href="#"> Пандусы для инвалидных колясок </a></li>
+                            <li><a href="#"> Арены </a></li>
+                            <li><a href="#"> Патио </a></li>
+                            <li><a href="#"> Курсы Mini-Putt </a></li>
+                            <li><a href="#"> Ступени лестницы </a></li>
+                            <li><a href="#"> Балконы </a></li>
+                            <li><a href="#"> И более </a></li>
                         </ul>
                     </div>
                 </div>
@@ -340,7 +323,8 @@
         <div class="text-center">
             <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
+                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
             <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">
