@@ -23,7 +23,7 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="/">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -67,8 +67,10 @@
                         <a href="/contact" class="nav-link">Контакт</a>
                     </li>
                     <li class="nav-item">
-                        <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;" onclick="showRu()">Uz</p>
-                        <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;" onclick="showUz()">Ру</p>
+                        <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
+                            onclick="showRu()">Uz</p>
+                        <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;" onclick="showUz()">
+                            Ру</p>
                     </li>
                     </ul>
                 </div>
@@ -81,6 +83,7 @@
             ru.style.display = "block";
             uz.style.display = "none";
         }
+
         function showUz() {
             var uz = document.querySelector(".lang-uz");
             var ru = document.querySelector(".lang-ru");
@@ -148,28 +151,33 @@
         <div class="container-fluid">
             <h1>Наш персонал</h1>
             <div class="row">
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                    <img src="../images/Walter martins.jpg" alt="walter martins" style="width: 100%;" class="img-fluid">
-                    <h4>Walter Martins</h4>
-                    <h5>Генеральный директор
-                        Назначен Генеральным директором компании 28 марта 2014 года.
-                    </h5>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <img src="../images/Walter martins.jpg" alt="walter martins" style="width: 100%; height:264px;
+                        class="img-fluid">
+                    <h4>Сайфиев Равшан Эргашевич</h4>
+                    <h5>Генеральный директор</h5>
                 </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <img src="../images/Ashley Martins.jpg" alt="walter martins" style="width: 100%;" class="img-fluid">
-                    <h4>Ashley Martins</h4>
-                    <h5>Ashley - директор по политике и профессиональным услугам.</h5>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                    <img src="../images/Bradley Grosh.jpg" alt="walter martins" style="width: 100%;" class="img-fluid">
-                    <h4>Bradley Grosh</h4>
-                    <h5>Брэдли занимается внешними коммуникациями и исследованиями.</h5>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <img src="../images/Andy Matters.jpg" alt="walter martins" style="width: 100%;" class="img-fluid">
-                    <h4>Andy Matters</h4>
-                    <h5>Руководит всей работой по поиску и отбору экспертов, связанных с выходом на новый рынок.</h5>
-                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
+                <img src="../images/Bradley Grosh.jpg" alt="walter martins" style="width: 100%; height:264px;"
+                class="img-fluid">
+                <h4>Расссыпной Андрей Сергеевич</h4>
+                <h5>Андрей - Фин.Директор </h5>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="1500">
+            <img src="../images/Andy Matters.jpg" alt="walter martins" style="width: 100%; height:264px;"
+            class="img-fluid">
+            <h4>Раасыпной Виталий Сергеевич</h4>
+            <h5>Виталий - менеджер по продажам</h5>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
+            data-aos-duration="1500">
+            <img src="../images/man bek.jpg" alt="walter martins" style="width: 100%; height:264px;" class="img-fluid">
+            <h4>Бекмурадов Чоршанба </h4>
+            <h5>Бекмурадов - менеджер по продажам</h5>
+        </div>
             </div>
         </div>
     </div>
@@ -244,9 +252,9 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>4578 Marmora Road, Glasgow D04 89GR</h4>
+            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:#">800-2345-6789</a>
+                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
             </h1>
             <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">
@@ -256,7 +264,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>TinyTrust3119 © 2021.</span><a href="#"> Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
             </h6>
         </div>
     </footer>
@@ -271,13 +279,15 @@
         <div class="circle2"></div>
     </div>
     {{-- connect with me --}}
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     <!-- anime -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="/">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -113,7 +113,7 @@
                                         <span class="fa fa-map-marker"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Адрес:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                        <p><span>Адрес:</span> Г.Ташкент Ул.Таффакур 43</p>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                         <span class="fa fa-globe"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Веб-сайт</span> <a href="#">Falcon.com</a></p>
+                                        <p><span>Веб-сайт</span> <a href="#">Falcon.uz</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -216,18 +216,17 @@
     {{-- form --}}
 
     <!--map  -->
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19265.385882420935!2d69.22824393847338!3d41.28913186788444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b6968102c8d%3A0xdacf2521ca44a1d9!2sRedFox%20Academy!5e1!3m2!1suz!2s!4v1632438376149!5m2!1suz!2s"
-        width="100%" height="450" style="border:0;" padding:0; allowfullscreen="" loading="eager"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.760152030951!2d69.25589561483577!3d41.292324209846996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aef4d314cb1%3A0xe2b0854cb9883527!2zNDMgVGFmYWtrdXIga28nY2hhc2ksINCi0L7RiNC60LXQvdGCLCBPYHpiZWtpc3Rvbg!5e0!3m2!1suz!2s!4v1632900073014!5m2!1suz!2s" width="100%" height="450" style="border:0;" padding:0; allowfullscreen="" loading="eager"></iframe>
     <!--map  -->
+
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>4578 Marmora Road, Glasgow D04 89GR</h4>
+            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:#">800-2345-6789</a>
+                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
             </h1>
-            <p>7 дней в неделю с 9:00 до 19:00/p>
+            <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
                 <a href="#" class="fab fa-twitter fa-2x"></a>
@@ -235,7 +234,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>TinyTrust3119 © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
             </h6>
         </div>
     </footer>
