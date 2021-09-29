@@ -23,7 +23,8 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Navbar</a>
+                <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
+                        style="height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,44 +35,26 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Главный</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servise">Услуги</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <span class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                O нас
-                            </span>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/about">O нас</a></li>
-                                <li class="dropdown-item click">
-                                    <span>Наведите на меня</span>
-                                    <div class="click-content">
-                                        <a href="#">Lorem, ipsum.</a>
-                                        <br>
-                                        <a href="#">Lorem, ipsum.</a>
-                                    </div>
-                                </li>
-                                <hr class="dropdown-divider">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery">Галерея</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servise">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gallery">Галерея</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact" class="nav-link active">Контакт</a>
-                    </li>
-                    <li class="nav-item">
-                        <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
-                            onclick="showRu()">Uz</p>
-                        <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;" onclick="showUz()">
-                            Ру</p>
-                    </li>
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link active">Контакт</a>
+                        </li>
+                        <li class="nav-item">
+                            <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
+                                onclick="showRu()">Uz</p>
+                            <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
+                                onclick="showUz()">
+                                Ру</p>
+                        </li>
                     </ul>
                 </div>
         </nav>
@@ -123,8 +106,10 @@
                                         <span class="fa fa-phone"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Телефон:</span> <a href="callto:+998909307218">+998 (90) 930 72 18 </a></p>
-                                        <p><span>Телефон:</span> <a href="callto:+998909588172">+998 (90) 958 81 72 </a></p>
+                                        <p><span>Телефон:</span> <a href="callto:+998909307218">+998 (90) 930 72 18 </a>
+                                        </p>
+                                        <p><span>Телефон:</span> <a href="callto:+998909588172">+998 (90) 958 81 72 </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -134,8 +119,7 @@
                                         <span class="fa fa-paper-plane"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Эл. адрес:</span> <a
-                                                href="mailto:#">Falcon.uz</a></p>
+                                        <p><span>Эл. адрес:</span> <a href="mailto:#">Falcon.uz</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +201,9 @@
     {{-- form --}}
 
     <!--map  -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.760152030951!2d69.25589561483577!3d41.292324209846996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aef4d314cb1%3A0xe2b0854cb9883527!2zNDMgVGFmYWtrdXIga28nY2hhc2ksINCi0L7RiNC60LXQvdGCLCBPYHpiZWtpc3Rvbg!5e0!3m2!1suz!2s!4v1632900073014!5m2!1suz!2s" width="100%" height="450" style="border:0;" padding:0; allowfullscreen="" loading="eager"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.760152030951!2d69.25589561483577!3d41.292324209846996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aef4d314cb1%3A0xe2b0854cb9883527!2zNDMgVGFmYWtrdXIga28nY2hhc2ksINCi0L7RiNC60LXQvdGCLCBPYHpiZWtpc3Rvbg!5e0!3m2!1suz!2s!4v1632900073014!5m2!1suz!2s"
+        width="100%" height="450" style="border:0;" padding:0; allowfullscreen="" loading="eager"></iframe>
     <!--map  -->
 
     <!-- footer -->

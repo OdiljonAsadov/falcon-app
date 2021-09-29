@@ -23,7 +23,8 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Navbar</a>
+                <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
+                        style="height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,44 +35,26 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Главный</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/servise">Услуги</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <span class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                O нас
-                            </span>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/about">O нас</a></li>
-                                <li class="dropdown-item click">
-                                    <span>Наведите на меня</span>
-                                    <div class="click-content">
-                                        <a href="#">Lorem, ipsum.</a>
-                                        <br>
-                                        <a href="#">Lorem, ipsum.</a>
-                                    </div>
-                                </li>
-                                <hr class="dropdown-divider">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery">Галерея</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/servise">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gallery">Галерея</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact" class="nav-link">Контакт</a>
-                    </li>
-                    <li class="nav-item">
-                        <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
-                            onclick="showRu()">Uz</p>
-                        <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;" onclick="showUz()">
-                            Ру</p>
-                    </li>
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link">Контакт</a>
+                        </li>
+                        <li class="nav-item">
+                            <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
+                                onclick="showRu()">Uz</p>
+                            <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
+                                onclick="showUz()">
+                                Ру</p>
+                        </li>
                     </ul>
                 </div>
         </nav>
@@ -224,7 +207,8 @@
         <div class="text-center">
             <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
+                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
             <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">

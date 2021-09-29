@@ -23,7 +23,8 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Navbar</a>
+                <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
+                        style="height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,44 +35,26 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Главный</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link active" href="/about">O нас</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servise">Услуги</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <span class="nav-link active dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                O нас
-                            </span>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item active" href="/about">O нас</a></li>
-                                <li class="dropdown-item click">
-                                    <span>Наведите на меня</span>
-                                    <div class="click-content">
-                                        <a href="#">Lorem, ipsum.</a>
-                                        <br>
-                                        <a href="#">Lorem, ipsum.</a>
-                                    </div>
-                                </li>
-                                <hr class="dropdown-divider">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery">Галерея</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/servise">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/gallery">Галерея</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contact" class="nav-link">Контакт</a>
-                    </li>
-                    <li class="nav-item">
-                        <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
-                            onclick="showRu()">Uz</p>
-                        <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;" onclick="showUz()">
-                            Ру</p>
-                    </li>
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link">Контакт</a>
+                        </li>
+                        <li class="nav-item">
+                            <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
+                                onclick="showRu()">Uz</p>
+                            <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
+                                onclick="showUz()">
+                                Ру</p>
+                        </li>
                     </ul>
                 </div>
         </nav>
@@ -154,30 +137,31 @@
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="1500">
                     <img src="../images/Walter martins.jpg" alt="walter martins" style="width: 100%; height:264px;
-                        class="img-fluid">
+                        class="   img-fluid">
                     <h4>Сайфиев Равшан Эргашевич</h4>
                     <h5>Генеральный директор</h5>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="1500">
-                <img src="../images/Bradley Grosh.jpg" alt="walter martins" style="width: 100%; height:264px;"
-                class="img-fluid">
-                <h4>Расссыпной Андрей Сергеевич</h4>
-                <h5>Андрей - Фин.Директор </h5>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
-            data-aos-duration="1500">
-            <img src="../images/Andy Matters.jpg" alt="walter martins" style="width: 100%; height:264px;"
-            class="img-fluid">
-            <h4>Раасыпной Виталий Сергеевич</h4>
-            <h5>Виталий - менеджер по продажам</h5>
-        </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
-            data-aos-duration="1500">
-            <img src="../images/man bek.jpg" alt="walter martins" style="width: 100%; height:264px;" class="img-fluid">
-            <h4>Бекмурадов Чоршанба </h4>
-            <h5>Бекмурадов - менеджер по продажам</h5>
-        </div>
+                    data-aos-duration="1500">
+                    <img src="../images/Bradley Grosh.jpg" alt="walter martins" style="width: 100%; height:264px;"
+                        class="img-fluid">
+                    <h4>Расссыпной Андрей Сергеевич</h4>
+                    <h5>Андрей - Фин.Директор </h5>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <img src="../images/Andy Matters.jpg" alt="walter martins" style="width: 100%; height:264px;"
+                        class="img-fluid">
+                    <h4>Раасыпной Виталий Сергеевич</h4>
+                    <h5>Виталий - менеджер по продажам</h5>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <img src="../images/man bek.jpg" alt="walter martins" style="width: 100%; height:264px;"
+                        class="img-fluid">
+                    <h4>Бекмурадов Чоршанба </h4>
+                    <h5>Бекмурадов - менеджер по продажам</h5>
+                </div>
             </div>
         </div>
     </div>
@@ -254,7 +238,8 @@
         <div class="text-center">
             <h4>43 Tafakkur ko'chasi, Тошкент</h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909194410">+998 (90) 919 44 10</a>
+                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
             <p>7 дней в неделю с 9:00 до 19:00</p>
             <div class="icons">

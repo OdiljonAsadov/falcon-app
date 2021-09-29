@@ -283,6 +283,30 @@ body .row {
     background-repeat: no-repeat;
 }
 
+.img-history .bg5 {
+    background-image: url(../../images/16footballclub2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-history .bg6 {
+    background-image: url(../../images/photo_2021-09-29_20-10-13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-history .bg7 {
+    background-image: url(../../images/bascket.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-history .bg8 {
+    background-image: url(../../images/photo_2021-09-29_20-10-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .img-history .product:hover {
     opacity: 1;
     transition: 0.5s;
@@ -350,9 +374,10 @@ body .row {
     padding: 0;
 }
 
-.rubber .links ul li {
+.rubber .links ul li a{
     color: #08d3e0;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .rubber .links ul li:not(:first-child) {
@@ -608,7 +633,7 @@ footer h6 a:hover {
         margin: 0;
         padding: 0 15px 80px 15px;
     }
-    .rubber .links ul li {
+    .rubber .links ul li a{
         font-size: 18px;
     }
     /* rubber */
@@ -657,7 +682,7 @@ footer h6 a:hover {
         margin: 0;
         padding: 85px 15px 0px 15px;
     }
-    .rubber .links ul li {
+    .rubber .links ul li a{
         font-size: 16px;
         line-height: 15px;
     }
@@ -713,7 +738,7 @@ footer h6 a:hover {
         margin: 0;
         padding: 85px 15px 0px 15px;
     }
-    .rubber .links ul li {
+    .rubber .links ul li a{
         font-size: 16px;
         line-height: 15px;
     }
@@ -769,7 +794,7 @@ footer h6 a:hover {
         margin: 0;
         padding: 85px 15px 0px 15px;
     }
-    .rubber .links ul li {
+    .rubber .links ul li a{
         font-size: 14px;
         line-height: 15px;
     }
