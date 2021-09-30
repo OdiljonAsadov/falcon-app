@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Information;
 
 class CategoryController extends Controller
 {
@@ -16,6 +17,20 @@ class CategoryController extends Controller
     {
         $categories = Category::all();
         return view('category.index',compact('categories'));
+    }
+
+    public function mainPage()
+    {
+        $categories = Category::all();
+
+        return view('front.index', compact('categories'));
+    }
+
+    public function categoryPage()
+    {
+        $informations = Information::all();
+
+        return view('front.catigoryPage', compact('informations'));
     }
 
     /**

@@ -12,10 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('front.index');
-});
+Route::get('/','CategoryController@mainPage');
+Route::get('/catigory','CategoryController@categoryPage');
+// Route::get('/', function () {
+//     return view('front.index');
+// });
 Route::get('/about', function () {
     return view('front.aboutPage');
 });
@@ -28,9 +29,9 @@ Route::get('/gallery', function () {
 Route::get('/servise', function () {
     return view('front.servisePage');
 });
-Route::get('/catigory', function () {
-    return view('front.catigoryPage');
-});
+// Route::get('/catigory', function () {
+//     return view('front.catigoryPage');
+// });
 
 Route::get('/admin',function(){
     return view('index');
@@ -54,3 +55,9 @@ Route::get('/information/edit/{id}','InformationController@edit');
 Route::post('/information/edit/{id}','InformationController@update');
 Route::get('/information/delete/{id}','InformationController@destroy');
 Route::get('/information/show/{id}','InformationController@show');
+
+Route::get('/contact', 'TelegramBotController@sendMessage');
+Route::post('/send-message', 'TelegramBotController@storeMessage');
+Route::get('/send-photo', 'TelegramBotController@sendPhoto');
+Route::post('/store-photo', 'TelegramBotController@storePhoto');
+Route::get('/updated-activity', 'TelegramBotController@updatedActivity');

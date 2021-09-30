@@ -238,9 +238,11 @@
                 <div class="links row" data-aos="fade-right">
                     <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                         <ul>
-                            <li><a href="#">Детские площадки </a></li>
-                            <li><a href="#">Подъездные пути </a></li>
-                            <li><a href="#">Полы в гараже </a></li>
+                            @foreach ($categories as $category)
+                                <li><a href="/information/show/1"> {{ $category->title_uz }} </a></li>
+                            @endforeach
+                            <li><a href="/catigory">Подъездные пути </a></li>
+                            <li><a href="/information/show/1">Полы в гараже </a></li>
                             <li><a href="#">Пешеходные дорожки </a></li>
                             <li><a href="#">Окружение бассейна или терраса у бассейна </a></li>
                             <li><a href="#">Дорожки для гольфа </a></li>

@@ -23,7 +23,7 @@
     <div class="nawbar container-fluid">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
+                <a class="navbar-brand" href="/"><img src="../../images/Logo.svg" alt="logo" class="img-fluid"
                         style="height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -78,33 +78,26 @@
 
     <!-- main content -->
     <div class="main-content">
+        @foreach ($informations as $information)
+
         <div class="container">
-            <h2 class="title">Product</h2>
+            <h2 class="title">{{ $information->title_ru }}</h2>
             <div class="img-container">
                 <div class="row justify-content-between">
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12"><img src="./images/9.png" alt="9"
-                            class="img-fluid"></div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12"><img src="./images/8.png" alt="9"
-                            class="img-fluid"></div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12"><img src="./images/7.png" alt="9"
-                            class="img-fluid"></div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12" style="width: 350px;"><img src="{{ $information->image_1 }}" alt="9"
+                            class="img-fluid" style="height: 250px"></div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12" style="width: 350px;"><img src="{{ $information->image_2 }}" alt="9"
+                            class="img-fluid" style="height: 250px"></div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12" style="width: 350px;"><img src="{{ $information->image_3 }}" alt="9"
+                            class="img-fluid" style="height: 250px"></div>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae perspiciatis similique
-                omnis
-                sit nemo, ipsam ducimus sequi explicabo distinctio voluptates officia, laboriosam ut aperiam, aspernatur
-                sapiente. Distinctio, recusandae excepturi quisquam porro ipsam quo minus culpa, officia ut sapiente
-                laudantium
-                atque. Sit excepturi, expedita libero commodi impedit inventore tempora vitae?</p>
+            <p>{!!$information->summernote_ru!!}</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum nulla amet ipsam. Commodi aut eius
-                maiores
-                perferendis totam voluptate!</p>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, fugiat quisquam assumenda, earum soluta
-                voluptate vero in tempore facere maiores sequi hic impedit dolorum autem consequuntur deserunt doloribus
-                nesciunt pariatur.</p>
+           
         </div>
+                    
+        @endforeach
     </div>
     <!-- main content -->
 

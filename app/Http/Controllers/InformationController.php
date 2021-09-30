@@ -76,7 +76,8 @@ class InformationController extends Controller
     public function show($id)
     {
         $categories = Information::where('id',$id)->get();
-        return view('show',compact('categories'));
+        $informations = Information::where('id',$id)->get();
+        return view('front.catigoryPage',compact('categories', 'informations'));
 
     }
 

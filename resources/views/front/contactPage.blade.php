@@ -84,6 +84,11 @@
     </div>
     <!-- about servises -->
     {{-- form --}}
+
+    @if (session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -138,13 +143,14 @@
                             <div class="col-xxl-7 col-xl-7 col-md-7">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <h3 class="mb-4">Связаться с нами</h3>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <form action="{{ url('/send-message') }}" method="post">
+                                        {{ csrf_field() }}
                                         <div class="row">
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
                                                     <label class="label" for="name">Полное имя</label>
                                                     <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Name" required>
+                                                        placeholder="Полное имя" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -159,21 +165,21 @@
                                                 <div class="form-group">
                                                     <label class="label" for="subject">Тема</label>
                                                     <input type="text" class="form-control" name="subject"
-                                                        id="subject" placeholder="Subject" required>
+                                                        id="subject" placeholder="Тема" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
                                                     <label class="label" for="Phone">Номер телефона</label>
                                                     <input type="number" class="form-control" name="Phone" id="Phone"
-                                                        placeholder="Phone Number" required>
+                                                        placeholder="+998 XX XXX XX XX" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-12 col-xl-12 col-md-12">
                                                 <div class="form-group">
                                                     <label class="label" for="#">Сообщение</label>
                                                     <textarea name="message" class="form-control" id="message"
-                                                        cols="30" rows="4" placeholder="Message" required></textarea>
+                                                        cols="30" rows="4" placeholder="Сообщение" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-12 col-xl-12 col-md-12">
