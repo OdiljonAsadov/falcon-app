@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use App\Http\SetLocale;
 use App\Category;
 use App\Information;
 
@@ -22,15 +23,18 @@ class CategoryController extends Controller
     public function mainPage()
     {
         $categories = Category::all();
+        $locales = config('app.available_locales');
+        $locale = app()->getLocale();
 
-        return view('front.index', compact('categories'));
+        return view('front.index', compact('categories', 'locales'));
     }
 
     public function categoryPage()
     {
         $informations = Information::all();
+        $locale = app()->getLocale();
 
-        return view('front.catigoryPage', compact('informations'));
+        return view('front.catigoryPage', compact('informations', 'locale'));
     }
 
     /**
