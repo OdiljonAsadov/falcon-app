@@ -35,9 +35,40 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Главный</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="/catigory">Категории</a>
-                        </li> --}}
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Катигории
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">Детские площадки </a></li>
+                                                <li><a class="dropdown-item" href="#">Подъездные пути </a></li>
+                                                <li><a class="dropdown-item" href="#">Полы в гараже </a></li>
+                                                <li><a class="dropdown-item" href="#">Пешеходные дорожки </a></li>
+                                                <li><a class="dropdown-item" href="#">Окружение бассейна или терраса у бассейна </a></li>
+                                                <li><a class="dropdown-item" href="#">Дорожки для гольфа </a></li>
+                                                <li><a class="dropdown-item" href="#">Зоны с джакузи </a></li>
+                                                <li><a class="dropdown-item" href="#">Полы в спортзале </a></li>
+                                                <li><a class="dropdown-item" href="#"> Подвалы </a></li>
+                                                <li><a class="dropdown-item" href="#"> Детский сад </a></li>
+                                                <li><a class="dropdown-item" href="#"> Пандусы для инвалидных колясок </a></li>
+                                                <li><a class="dropdown-item" href="#"> Арены </a></li>
+                                                <li><a class="dropdown-item" href="#"> Патио </a></li>
+                                                <li><a class="dropdown-item" href="#"> Курсы Mini-Putt </a></li>
+                                                <li><a class="dropdown-item" href="#"> Ступени лестницы </a></li>
+                                                <li><a class="dropdown-item" href="#"> Балконы </a></li>
+                                                <li><a class="dropdown-item" href="#"> И более </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="/servise">Услуги</a>
@@ -48,32 +79,15 @@
                         <li class="nav-item">
                             <a href="/contact" class="nav-link active">Контакт</a>
                         </li>
-                        <li class="nav-item">
-                            <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
-                                onclick="showRu()">Uz</p>
-                            <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
-                                onclick="showUz()">
-                                Ру</p>
+                        <li class="nav-item d-flex align-items-center" >
+                            <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a>
+                            <p style="margin: 0;">|</p>
+                            <a href="#" class="nav-link lang-ru" style="cursor: pointer;">Ру</a>
                         </li>
                     </ul>
                 </div>
         </nav>
     </div>
-    <script>
-        function showRu() {
-            var ru = document.querySelector(".lang-ru");
-            var uz = document.querySelector(".lang-uz");
-            ru.style.display = "block";
-            uz.style.display = "none";
-        }
-
-        function showUz() {
-            var uz = document.querySelector(".lang-uz");
-            var ru = document.querySelector(".lang-ru");
-            uz.style.display = "block";
-            ru.style.display = "none";
-        }
-    </script>
     <!-- navbar -->
 
     <!-- about servises -->
