@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Главный</a>
+                            <a class="nav-link" aria-current="page" href="/?language={{ Request::get('language') }}">{{__('home')}}</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -70,14 +70,18 @@
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link active" href="/about">O нас</a></li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link active" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/servise">Услуги</a>
+                            <a class="nav-link" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/gallery">Галерея</a>
+                            <a class="nav-link" href="/gallery?language={{ Request::get('language') }}">{{__('images')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">Контакт</a>
+                            <a href="/contact?language={{ Request::get('language') }}" class="nav-link">{{__('contact')}}</a>
                         </li>
                         <li class="nav-item d-flex align-items-center" >
                             <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a><p style="margin: 0;">|</p>

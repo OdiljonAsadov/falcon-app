@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Главный</a>
+                            <a class="nav-link" aria-current="page" href="/?language={{ Request::get('language') }}">{{__('home')}}</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -70,14 +70,18 @@
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/servise">Услуги</a>
+                            <a class="nav-link" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/gallery">Галерея</a>
+                            <a class="nav-link" href="/gallery?language={{ Request::get('language') }}">{{__('images')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link active">Контакт</a>
+                            <a href="/contact?language={{ Request::get('language') }}" class="nav-link active">{{__('contact')}}</a>
                         </li>
                         <li class="nav-item d-flex align-items-center" >
                             <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a>
@@ -98,6 +102,11 @@
     </div>
     <!-- about servises -->
     {{-- form --}}
+
+    @if (session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -152,13 +161,14 @@
                             <div class="col-xxl-7 col-xl-7 col-md-7">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <h3 class="mb-4">Связаться с нами</h3>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <form action="{{ url('/send-message') }}" method="post">
+                                        {{ csrf_field() }}
                                         <div class="row">
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
                                                     <label class="label" for="name">Полное имя</label>
                                                     <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Name" required>
+                                                        placeholder="Полное имя" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -173,21 +183,21 @@
                                                 <div class="form-group">
                                                     <label class="label" for="subject">Тема</label>
                                                     <input type="text" class="form-control" name="subject"
-                                                        id="subject" placeholder="Subject" required>
+                                                        id="subject" placeholder="Тема" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
                                                     <label class="label" for="Phone">Номер телефона</label>
                                                     <input type="number" class="form-control" name="Phone" id="Phone"
-                                                        placeholder="Phone Number" required>
+                                                        placeholder="+998 XX XXX XX XX" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-12 col-xl-12 col-md-12">
                                                 <div class="form-group">
                                                     <label class="label" for="#">Сообщение</label>
                                                     <textarea name="message" class="form-control" id="message"
-                                                        cols="30" rows="4" placeholder="Message" required></textarea>
+                                                        cols="30" rows="4" placeholder="Сообщение" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-12 col-xl-12 col-md-12">

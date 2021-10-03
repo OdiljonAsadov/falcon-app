@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Главный</a>
+                            <a class="nav-link active" aria-current="page" href="/">{{__('home')}}</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -71,19 +71,41 @@
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="/catigory">Категории</a>
+                        </li> --}}
+                        <li class="nav-item"><a class="nav-link" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/servise">Услуги</a>
+                            <a class="nav-link" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/gallery">Галерея</a>
+                            <a class="nav-link" href="/gallery?language={{ Request::get('language') }}">{{__('images')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">Контакт</a>
+                            <a href="/contact?language={{ Request::get('language') }}" class="nav-link">{{__('contact')}}</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a>
                             <p style="margin: 0; color: #999;">|</p>
                             <a href="#" class="nav-link lang-ru" style="cursor: pointer;">Ру</a>
+
+                        {{-- @foreach (config('app.available_locales') as $locale)
+                            <li class="nav-item">
+                               <a href="{{ request()->url() }}?language={{ $locale }}"
+                                  class="@if (app()->getLocale() == $locale) border-indigo-400 @endif inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out">
+                                   [{{ strtoupper($locale) }}]
+                               </a>
+                            </li>
+                        @endforeach --}}
+                        @foreach ($locales as $locale)
+                            <a href="{{ request()->url() }}?language={{ $locale }}" class="nav-link" style="font-size: 20px;">{{ strtoupper($locale) }}</a>
+                        @endforeach
+                        <li class="nav-item">
+                            <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
+                                onclick="showRu()">Uz</p>
+                            <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
+                                onclick="showUz()">
+                                Ру</p>
                         </li>
                     </ul>
                 </div>
@@ -96,23 +118,23 @@
             <ul>
                 <li>
                     <a class="ns-img img-fluid" href="./images/forslide1.gif"></a>
-                    <div class="caption">Безопаснее</div>
+                    <div class="caption">{{__('safely')}}</div>
                 </li>
                 <li>
                     <a class="ns-img img-fluid" href="./images/forslide2.jpg"></a>
-                    <div class="caption">Комфортный</div>
+                    <div class="caption">{{__('nice')}}</div>
                 </li>
                 <li>
                     <a class="ns-img img-fluid" href="./images/forslide3.jpg"></a>
-                    <div class="caption">Милый</div>
+                    <div class="caption">{{__('cute')}}</div>
                 </li>
                 <li>
                     <a class="ns-img img-fluid" href="./images/forslide4.jfif"></a>
-                    <div class="caption">Качественный</div>
+                    <div class="caption">{{__('quality')}}</div>
                 </li>
                 <li>
                     <a class="ns-img img-fluid" href="./images/forslide5.jpg"></a>
-                    <div class="caption">Сильный</div>
+                    <div class="caption">{{__('strong')}}</div>
                 </li>
             </ul>
             <div class="navsWrapper">
@@ -126,19 +148,15 @@
     <!-- content us -->
     <div class="row">
         <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 bg-primary-variant-2 text-end">
-            <h2>О нас</h2>
-            <p>Мы занимаемся установкой резиновых покрытий в коммерческих и жилых помещениях. Мы делаем террасы для
-                бассейнов, брызговики, игровые площадки, веранды, дорожки, лестницы, бордюры, полы в гаражах, детские
-                площадки, патио, бары / рестораны, подвальные этажи, сады с резиновой мульчей и игровые площадки. Чистки
-                и ремонт, повреждение или новостройка. Мы покрываем все это внутри или вне помещений ....</p>
+            <h2>{{__('aboutUs')}} </h2>
+            <p>{{__('aboutUsText')}}  ....</p>
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
             <img src="./images/dophin.jpg" alt="dolphin" style="height: 100%;" class="img-fluid">
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg-color1">
-            <h2>Кто мы?</h2>
-            <p>Мы небольшая компания, занимающаяся нанесением покрытий, и одна из самых опытных в сфере производства
-                резиновых покрытий. Мы занимаемся коммерческими и жилыми проектами всех видов.</p>
+            <h2>{{__('who')}}</h2>
+            <p>{{__('whoText')}}</p>
         </div>
     </div>
     <!-- second -->
@@ -147,10 +165,8 @@
             <img src="./images/gameplayarea.jpg" style="height: 100%;" alt="" class="img-fluid">
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg-color2-valriant-1">
-            <h2>Наш персонал</h2>
-            <p>Мы очень тщательно прорабатываем каждую деталь выполняемой работы и используем в наших проектах только
-                опытных установщиков. Наша компания основана на убеждении, что если вы сделаете хорошую работу, клиент
-                может кому-то рассказать.</p>
+            <h2>{{__('personal')}}</h2>
+            <p>{{__('personalText')}}</p>
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
             <img src="./images/rainbow.jpg" style="height: 100%;" alt="rainbow" class="img-fluid">
@@ -159,16 +175,13 @@
     <!-- content us -->
     <div class="ourHistory">
         <div class="container-fluid">
-            <h1 class="text-center">Наша история</h1>
+            <h1 class="text-center">{{__('history')}}</h1>
             <div class="row pt-3">
-                <div class="col-xxl-6 col-xl-6 col-md-6" data-aos="zoom-in-right">
-                    <p>Молва составляет значительную часть нашего бизнеса, мы сделаем все возможное, чтобы вы остались
-                        довольны своей установкой, а также были рядом, чтобы помочь вам в будущем.</p>
+                <div class="col-xxl-6 col-xl-6 col-md-6" style="padding-right: 4px;" data-aos="zoom-in-right">
+                    <p>{{__('historyText1')}}</p>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-md-6" data-aos="zoom-in-right">
-                    <p>Расценки на установку всегда бесплатны, без каких-либо обязательств и выполняются обученными и
-                        опытными людьми в компании. И мы одни из немногих в отрасли, у которых «нет минимальной площади
-                        в квадратных футах» ... нет работы слишком маленькой.</p>
+                    <p>{{__('historyText2')}}</p>
                 </div>
             </div>
         </div>
@@ -247,32 +260,33 @@
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                 <div class="text-content" data-aos="fade-right">
-                    <h1>Где я могу использовать каучуковое покрытие?</h1>
+                    <h1>{{__('categoryText')}}?</h1>
                 </div>
                 <div class="links row" data-aos="fade-right">
                     <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                         <ul>
-                            <li><a href="#">Детские площадки </a></li>
-                            <li><a href="#">Подъездные пути </a></li>
-                            <li><a href="#">Полы в гараже </a></li>
-                            <li><a href="#">Пешеходные дорожки </a></li>
-                            <li><a href="#">Окружение бассейна или терраса у бассейна </a></li>
-                            <li><a href="#">Дорожки для гольфа </a></li>
+                            <li><a href="/information/show/1"> {{__('category1')}} </a></li>
+
+                            <li><a href="/catigory"> {{__('category2')}} </a></li>
+                            <li><a href="/information/show/1"> {{__('category3')}} </a></li>
+                            <li><a href="#"> {{__('category4')}} </a></li>
+                            <li><a href="#"> {{__('category5')}} </a></li>
+                            {{-- <li><a href="#"> {{__('category1')}} </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
-                            <li><a href="#">Полы в спортзале </a></li>
+                            <li><a href="#">Полы в спортзале </a></li> --}}
                         </ul>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li><a href="#"> Подвалы </a></li>
-                            <li><a href="#"> Детский сад </a></li>
-                            <li><a href="#"> Пандусы для инвалидных колясок </a></li>
-                            <li><a href="#"> Арены </a></li>
-                            <li><a href="#"> Патио </a></li>
-                            <li><a href="#"> Курсы Mini-Putt </a></li>
+                            <li><a href="#">  {{__('category6')}}  </a></li>
+                            <li><a href="#">  {{__('category7')}} </a></li>
+                            <li><a href="#">  {{__('category8')}}  </a></li>
+                            <li><a href="#">  {{__('category9')}}  </a></li>
+                            <li><a href="#">  {{__('category10')}}  </a></li>
+                            {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>
-                            <li><a href="#"> И более </a></li>
+                            <li><a href="#"> И более </a></li> --}}
                         </ul>
                     </div>
                 </div>
@@ -298,32 +312,32 @@
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 byOrder2">
                 <div class="text-content" data-aos="zoom-in-up">
-                    <h1>Каковы преимущества?</h1>
+                    <h1>{{__('categoryText2')}}</h1>
                 </div>
                 <div class="links row" data-aos="zoom-in-up">
                     <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                         <ul>
-                            <li><a href="#">Детские площадки </a></li>
-                            <li><a href="#">Подъездные пути </a></li>
-                            <li><a href="#">Полы в гараже </a></li>
-                            <li><a href="#">Пешеходные дорожки </a></li>
-                            <li><a href="#">Окружение бассейна или терраса у бассейна </a></li>
-                            <li><a href="#">Дорожки для гольфа </a></li>
+                            <li><a href="#">{{__('category1')}}</a></li>
+                            <li><a href="#">{{__('category2')}} </a></li>
+                            <li><a href="#">{{__('category3')}} </a></li>
+                            <li><a href="#">{{__('category4')}}</a></li>
+                            <li><a href="#">{{__('category5')}}</a></li>
+                            {{-- <li><a href="#">Дорожки для гольфа </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
-                            <li><a href="#">Полы в спортзале </a></li>
+                            <li><a href="#">Полы в спортзале </a></li> --}}
                         </ul>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li><a href="#"> Подвалы </a></li>
-                            <li><a href="#"> Детский сад </a></li>
-                            <li><a href="#"> Пандусы для инвалидных колясок </a></li>
-                            <li><a href="#"> Арены </a></li>
-                            <li><a href="#"> Патио </a></li>
-                            <li><a href="#"> Курсы Mini-Putt </a></li>
+                            <li><a href="#"> {{__('category6')}} </a></li>
+                            <li><a href="#"> {{__('category7')}}</a></li>
+                            <li><a href="#"> {{__('category8')}} </a></li>
+                            <li><a href="#"> {{__('category9')}} </a></li>
+                            <li><a href="#"> {{__('category10')}} </a></li>
+                            {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>
-                            <li><a href="#"> И более </a></li>
+                            <li><a href="#"> И более </a></li> --}}
                         </ul>
                     </div>
                 </div>
@@ -335,12 +349,12 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
+            <h4>{{__('manzil')}} </h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
-                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
-            <p>7 дней в неделю с 9:00 до 19:00</p>
+            <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
                 <a href="#" class="fab fa-twitter fa-2x"></a>
@@ -348,7 +362,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>
