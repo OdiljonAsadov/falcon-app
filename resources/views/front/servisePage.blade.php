@@ -79,17 +79,13 @@
     <!-- about servises -->
     <div class="ourHistory">
         <div class="container-fluid">
-            <h1 class="text-center">О наших услугах</h1>
+            <h1 class="text-center">{{__('xizmatlar1')}}</h1>
             <div class="row pt-3">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 p-2">
-                    <p>Молва составляет значительную часть нашего бизнеса, мы сделаем все возможное, чтобы вы остались
-                        довольны своей установкой, а также были рядом, чтобы помочь вам в будущем.</p>
+                    <p>{{__('historyText1')}}</p>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 p">
-                    <p>Расценки на установку всегда бесплатны, без обязательств и выполняются обученными и опытными
-                        людьми.
-                        в компании. И мы одни из немногих в отрасли, у которых нет минимального квадрата
-                        кадры "... нет работы слишком маленькой.</p>
+                    <p>{{__('historyText2')}}</p>
                 </div>
             </div>
         </div>
@@ -103,10 +99,8 @@
                 <img src="../images/design.jpg" alt="design" style="height: 100%;" class="img-fluid">
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg-color2-valriant-1">
-                <h2>Дизайн</h2>
-                <p>Наша миссия - предоставлять нашим клиентам продукцию высшего качества для обработки поверхностей.
-                    Наши высококлассные сотрудники по обслуживанию клиентов ответят вовремя и обеспечат неизменно
-                    высокое качество и надежность!</p>
+                <h2>{{__('xizmatlar2')}}</h2>
+                <p>{{__('xizmatlar3')}}</p>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
                 <img src="../images/sunPicture2.jpg" alt="sunPicture" style="height: 100%;" class="img-fluid">
@@ -117,19 +111,15 @@
     <!-- second -->
     <div class="row">
         <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 bg-primary-variant-2 text-end">
-            <h2>Программы обслуживания</h2>
-            <p>Уход за поверхностью важен для долговечности продукта. Используя нашу программу технического
-                обслуживания, вы можете помочь сохранить и оживить вашу поверхность по мере необходимости, защищая свои
-                вложения и ваше оборудование! Мы тратим все свое время, усилия, ресурсы и предоставляем вам лучшие
-                покрытия в отрасли с широчайшим спектром типов поверхностей, выбора цвета и вариантов отделки.</p>
+            <h2>{{__('xizmatlar4')}}</h2>
+            <p>{{__('xizmatlar5')}}</p>
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
             <img src="../images/oval.jpg" alt="ova;" style="height: 100%;" class="img-fluid">
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg-color1">
-            <h2>Безопасность</h2>
-            <p>Независимо от того, являетесь ли вы архитектором, строителем игровых площадок или служащим школы / парка,
-                когда речь идет о детских площадках, главное - безопасность.</p>
+            <h2>{{__('xizmatlar6')}}</h2>
+            <p>{{__('xizmatlar7')}}</p>
         </div>
     </div>
     <!-- third -->
@@ -137,32 +127,33 @@
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                 <div class="text-content" data-aos="fade-right">
-                    <h1>Обзор продукта</h1>
+                    <h1>{{__('xizmatlar8')}}</h1>
                 </div>
                 <div class="links row" data-aos="fade-right">
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li>Playgrounds</li>
-                            <li>Driveways</li>
-                            <li>Garage floors</li>
-                            <li>Walkways</li>
-                            <li>Pool surrounds or Pool Deck</li>
-                            <li>Golf paths</li>
+                            <li><a href="/information/show/1" style="text-decoration: none;"> {{__('category1')}} </a></li>
+
+                            <li><a href="//information/show/1" style="text-decoration: none;"> {{__('category2')}} </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;"> {{__('category3')}} </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;"> {{__('category4')}} </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;"> {{__('category5')}} </a></li>
+                            {{-- <li>Golf paths</li>
                             <li>Hot tub areas</li>
-                            <li>Gym floors</li>
+                            <li>Gym floors</li> --}}
                         </ul>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li>Basements</li>
-                            <li>Daycare's</li>
-                            <li>Wheelchair Ramps</li>
-                            <li>Arenas</li>
-                            <li>Patios</li>
-                            <li>Mini-Putt courses</li>
+                            <li><a href="/information/show/1" style="text-decoration: none;">  {{__('category6')}}  </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;">  {{__('category7')}} </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;">  {{__('category8')}}  </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;">  {{__('category9')}}  </a></li>
+                            <li><a href="/information/show/1" style="text-decoration: none;">  {{__('category10')}}  </a></li>
+                            {{-- <li>Mini-Putt courses</li>
                             <li>Stair treads</li>
                             <li>Balconies</li>
-                            <li>And More</li>
+                            <li>And More</li> --}}
                         </ul>
                     </div>
                 </div>
@@ -188,14 +179,10 @@
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                 <div class="text-content" data-aos="flip-right">
-                    <h1>Резиновая игровая площадка</h1>
+                    <h1>{{__('xizmatlar9')}}</h1>
                 </div>
                 <div class="info" data-aos="flip-right">
-                    <p>Поверхность вашей игровой площадки будет выглядеть красиво при минимальном уходе. Он
-                        вандалостойкий, химически стойкий и простой в уходе. Мы предлагаем универсальную поверхность,
-                        которую можно установить на любую глубину, чтобы удовлетворить все ваши потребности. Мы
-                        используем подходящую поверхность для детских садов, детских садов, начальных школ или вашей
-                        частной игровой зоны.</p>
+                    <p>{{__('xizmatlar10')}}</p>
                 </div>
             </div>
         </div>
@@ -205,12 +192,12 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
+            <h4>{{__('manzil')}} </h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
-                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
-            <p>7 дней в неделю с 9:00 до 19:00</p>
+            <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
                 <a href="#" class="fab fa-twitter fa-2x"></a>
@@ -218,7 +205,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>

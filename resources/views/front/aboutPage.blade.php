@@ -82,46 +82,35 @@
             <div class="row">
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 p-3">
                     <div class="Who-We-Are">
-                        <h1>Кто мы есть</h1>
+                        <h1>{{__('ktomi')}}</h1>
                         <img src="../images/who we are.jpg" alt="Who-We-Are" class="img-fluid">
-                        <h4 class="special-text">Мы обеспечиваем вам душевное спокойствие и профессиональный опыт,
-                            которого
-                            вы заслуживаете при работе с компанией, занимающейся отделкой поверхностей.</h4>
-                        <h4>Мы тратим все свое время, усилия и ресурсы на одно - предоставить вам лучшие покрытия в
-                            отрасли с широчайшим спектром типов поверхностей, выбора цвета и вариантов отделки.</h4>
+                        <h4 class="special-text">{{__('ktomi2longtext')}}</h4>
+                        <h4>{{__('ktomi3longtext')}}</h4>
                         <br><br>
-                        <a href="#" class="specialBtn">Подробнее</a>
+                        {{-- <a href="#" class="specialBtn">Подробнее</a> --}}
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 p-3">
-                    <h1>Наши преимущества</h1>
+                    <h1>{{__('ktomi1')}}</h1>
                     <ol>
-                        <li>Maintenance programs</li>
-                        <h4>Наша компания очень тщательно прорабатывает каждую деталь выполняемой работы и привлекает к
-                            своим проектам только опытных монтажников.</h4>
-                        <li>Broad product offering</li>
-                        <h4>Мы предлагаем вам удобную, безопасную и нескользящую поверхность, подходящую для внутренних
-                            и наружных работ, с быстрым временем оборота.</h4>
-                        <li>Environmentally friendly</li>
-                        <h4>Резиновое покрытие в большинстве случаев укладывается поверх старых поверхностей, что
-                            устраняет необходимость вырывать и утилизировать материалы, использованные в исходной
-                            поверхности.</h4>
+                        <li>{{__('ktomi1text')}}</li>
+                        <h4>{{__('ktomi1longtext')}}</h4>
+                        <li>{{__('ktomi2text')}}</li>
+                        <h4>{{__('ktomi4longtext')}}</h4>
+                        <li>{{__('ktomi3text')}}</li>
+                        <h4>{{__('ktomi5longtext')}}</h4>
                     </ol>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 p-3">
-                    <h1>Почему нас?</h1>
-                    <h4>Мы компания, занимающаяся наплавкой, и одна из самых опытных в сфере производства резиновых
-                        покрытий. Устанавливаем только резиновые покрытия, это то, что мы делаем. Мы занимаемся
-                        коммерческими и жилыми проектами всех видов, от больших до маленьких.</h4>
+                    <h1>{{__('ktomi2')}}</h1>
+                    <h4>{{__('ktomi6longtext')}}</h4>
                     <div class="primary-text">
-                        <h3>Обученные монтажные бригады</h3>
-                        <h3>Национальные распределительные центры</h3>
-                        <h3>Более 20 лет опыта</h3>
-                        <h3>Опыт проектирования</h3>
-                        <h3>Доверие и удовлетворение</h3>
-                        <h4>Мы обеспечиваем вам душевное спокойствие и профессиональные знания, подкрепленные нашей
-                            опытной командой продаж, "highly qualified" специалистами по установке, программами
-                            технического обслуживания и отличным обслуживанием клиентов.</h4>
+                        <h3>{{__('ktomih1text')}}</h3>
+                        <h3>{{__('ktomih2text')}}</h3>
+                        <h3>{{__('ktomih3text')}}</h3>
+                        <h3>{{__('ktomih4text')}}</h3>
+                        <h3>{{__('ktomih5text')}}</h3>
+                        <h4>{{__('ktomi7longtext')}}</h4>
                     </div>
                 </div>
             </div>
@@ -132,35 +121,35 @@
     <!-- Our Staff -->
     <div class="our-stuff">
         <div class="container-fluid">
-            <h1>Наш персонал</h1>
+            <h1>{{__('ourPersonality')}}</h1>
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="1500">
                     <img src="../images/Walter martins.jpg" alt="walter martins" style="width: 100%; height:264px;
-                        class="   img-fluid">
-                    <h4>Сайфиев Равшан Эргашевич</h4>
-                    <h5>Генеральный директор</h5>
+                        class="img-fluid">
+                    <h4>{{__('ourPersonality1')}}</h4>
+                    <h5>{{__('ourPersonality1work')}}</h5>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
                     data-aos-duration="1500">
                     <img src="../images/Bradley Grosh.jpg" alt="walter martins" style="width: 100%; height:264px;"
                         class="img-fluid">
-                    <h4>Расссыпной Андрей Сергеевич</h4>
-                    <h5>Андрей - Фин.Директор </h5>
+                    <h4>{{__('ourPersonality2')}}</h4>
+                    <h5>{{__('ourPersonality2work')}} </h5>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-up" data-aos-easing="linear"
                     data-aos-duration="1500">
                     <img src="../images/Andy Matters.jpg" alt="walter martins" style="width: 100%; height:264px;"
                         class="img-fluid">
-                    <h4>Раасыпной Виталий Сергеевич</h4>
-                    <h5>Виталий - менеджер по продажам</h5>
+                    <h4>{{__('ourPersonality3')}}</h4>
+                    <h5>{{__('ourPersonality3work')}}</h5>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 p-3" data-aos="fade-down" data-aos-easing="linear"
                     data-aos-duration="1500">
                     <img src="../images/man bek.jpg" alt="walter martins" style="width: 100%; height:264px;"
                         class="img-fluid">
-                    <h4>Бекмурадов Чоршанба </h4>
-                    <h5>Бекмурадов - менеджер по продажам</h5>
+                    <h4>{{__('ourPersonality4')}}</h4>
+                    <h5>{{__('ourPersonality4work')}}</h5>
                 </div>
             </div>
         </div>
@@ -172,15 +161,14 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 px-2">
-                    <h1>Наши особенности</h1>
+                    <h1>{{__('bottomName')}}</h1>
                     <div class="details row">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-2 col-2">
                             <i class="fas fa-users fa-5x"></i>
                         </div>
                         <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-10 col-10">
-                            <h4>Обслуживание клиентов</h4>
-                            <h5>Наша главная работа - это удовлетворение запросов клиентов, позвольте нам доказать это
-                                вам!</h5>
+                            <h4>{{__('bottom3')}}</h4>
+                            <h5>{{__('bottom4')}}</h5>
                         </div>
                     </div>
                     <div class="details row">
@@ -188,9 +176,8 @@
                             <i class="fas fa-trophy fa-5x"></i>
                         </div>
                         <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-10 col-10">
-                            <h4>Безопасность</h4>
-                            <h5>Мы всегда стремимся сделать наш бизнес таким, к которому вы будете возвращаться снова и
-                                снова.</h5>
+                            <h4>{{__('bottom5')}}</h4>
+                            <h5>{{__('bottom6')}}</h5>
                         </div>
                     </div>
                     <div class="details row">
@@ -198,32 +185,28 @@
                             <i class="fas fa-thumbs-up fa-5x"></i>
                         </div>
                         <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-10 col-10">
-                            <h4>Доверие и удовлетворение</h4>
-                            <h5>Наши высококвалифицированные сотрудники, хорошие результаты и лояльность к клиенту - вот
-                                что выделяет нас.</h5>
+                            <h4>{{__('bottom7')}}</h4>
+                            <h5>{{__('bottom8')}}</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-md-3 px-2">
-                    <h1>Навыки и умения</h1>
+                    <h1>{{__('bottom1')}}</h1>
                     <div class="details">
-                        <h5>Мы используем резину и связующее высочайшего качества, чтобы создать красивый и долговечный
-                            конечный продукт.</h5><br>
-                        <h5>Наши резиновые покрытия также могут применяться в помещениях, на детских игровых площадках,
-                            полах в спортзалах и во многих других сферах.</h5>
+                        <h5>{{__('bottom9')}}</h5><br>
+                        <h5>{{__('bottom10')}}</h5>
                     </div>
                 </div>
                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 px-2">
-                    <h1>Отзывы</h1>
+                    <h1>{{__('bottom2')}}</h1>
                     <div class="details center-img">
                         <div class="row">
                             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 px-2">
                                 <img src="../images/David Peters.jpg" alt="david" class="img-fluid pt-2">
                             </div>
                             <div class="col-xxl-7 col-xl-7col-lg-7 col-md-12 col-12 px-2">
-                                <h5>«Большое спасибо за быстрый ответ. Я был очень впечатлен, ваше решение отличное !!
-                                    Ваша компетентность оправдана! »</h5>
-                                <h4>David Peters</h4>
+                                <h5>«{{__('bottom11')}} »</h5>
+                                {{-- <h4>David Peters</h4> --}}
                             </div>
                         </div>
                     </div>
@@ -236,12 +219,12 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
+            <h4>{{__('manzil')}} </h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
-                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
-            <p>7 дней в неделю с 9:00 до 19:00</p>
+            <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
                 <a href="#" class="fab fa-twitter fa-2x"></a>
@@ -249,7 +232,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>

@@ -78,7 +78,7 @@
 
     <div class="ourHistory">
         <div class="container-fluid px-5">
-            <h1 class="text-center">НАША ГАЛЕРЕЯ</h1>
+            <h1 class="text-center">{{__('xizmatlar11')}}</h1>
         </div>
     </div>
 
@@ -175,12 +175,12 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
+            <h4>{{__('manzil')}} </h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
-                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
-            <p>7 дней в неделю с 9:00 до 19:00</p>
+            <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
                 <a href="#" class="fab fa-twitter fa-2x"></a>
@@ -188,7 +188,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>

@@ -242,10 +242,10 @@
                         <ul>
                             <li><a href="/information/show/1"> {{__('category1')}} </a></li>
 
-                            <li><a href="/catigory"> {{__('category2')}} </a></li>
+                            <li><a href="//information/show/1"> {{__('category2')}} </a></li>
                             <li><a href="/information/show/1"> {{__('category3')}} </a></li>
-                            <li><a href="#"> {{__('category4')}} </a></li>
-                            <li><a href="#"> {{__('category5')}} </a></li>
+                            <li><a href="/information/show/1"> {{__('category4')}} </a></li>
+                            <li><a href="/information/show/1"> {{__('category5')}} </a></li>
                             {{-- <li><a href="#"> {{__('category1')}} </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
                             <li><a href="#">Полы в спортзале </a></li> --}}
@@ -253,11 +253,11 @@
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li><a href="#">  {{__('category6')}}  </a></li>
-                            <li><a href="#">  {{__('category7')}} </a></li>
-                            <li><a href="#">  {{__('category8')}}  </a></li>
-                            <li><a href="#">  {{__('category9')}}  </a></li>
-                            <li><a href="#">  {{__('category10')}}  </a></li>
+                            <li><a href="/information/show/1">  {{__('category6')}}  </a></li>
+                            <li><a href="/information/show/1">  {{__('category7')}} </a></li>
+                            <li><a href="/information/show/1">  {{__('category8')}}  </a></li>
+                            <li><a href="/information/show/1">  {{__('category9')}}  </a></li>
+                            <li><a href="/information/show/1">  {{__('category10')}}  </a></li>
                             {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>

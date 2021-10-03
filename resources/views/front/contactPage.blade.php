@@ -79,7 +79,7 @@
     <!-- about servises -->
     <div class="ourHistory">
         <div class="container-fluid px-5">
-            <h1 class="text-center">Связаться с нами</h1>
+            <h1 class="text-center">{{__('xizmatlar12')}}</h1>
         </div>
     </div>
     <!-- about servises -->
@@ -101,7 +101,7 @@
                                         <span class="fa fa-map-marker"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Адрес:</span> Г.Ташкент Ул.Таффакур 43</p>
+                                        <p><span>{{__('xizmatlar13')}}:</span> {{__('manzil')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,9 +111,9 @@
                                         <span class="fa fa-phone"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Телефон:</span> <a href="callto:+998909307218">+998 (90) 930 72 18 </a>
+                                        <p><span>{{__('xizmatlar14')}}:</span> <a href="callto:+998909307218">+998 (90) 930 72 18 </a>
                                         </p>
-                                        <p><span>Телефон:</span> <a href="callto:+998909588172">+998 (90) 958 81 72 </a>
+                                        <p><span>{{__('xizmatlar14')}}:</span> <a href="callto:+998909588172">+998 (90) 958 81 72 </a>
                                         </p>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                                         <span class="fa fa-paper-plane"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Эл. адрес:</span> <a href="mailto:#">Falcon.uz</a></p>
+                                        <p><span>{{__('xizmatlar15')}}:</span> <a href="mailto:#">Falcon.uz</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                         <span class="fa fa-globe"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Веб-сайт</span> <a href="Falcon.uz">Falcon.uz</a></p>
+                                        <p><span>{{__('xizmatlar16')}}</span> <a href="Falcon.uz">Falcon.uz</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -142,50 +142,48 @@
                         <div class="row no-gutters">
                             <div class="col-xxl-7 col-xl-7 col-md-7">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h3 class="mb-4">Связаться с нами</h3>
+                                    <h3 class="mb-4">{{__('xizmatlar12')}}</h3>
                                     <form action="{{ url('/send-message') }}" method="post">
                                         {{ csrf_field() }}
                                         <div class="row">
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="name">Полное имя</label>
+                                                    <label class="label" for="name">{{__('xizmatlar17')}}</label>
                                                     <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Полное имя" required>
+                                                        placeholder="{{__('xizmatlar17')}}" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="email">Адрес электронной
-                                                        почты</label>
+                                                    <label class="label" for="email">{{__('xizmatlar18')}}</label>
                                                     <input type="email" class="form-control" name="email" id="email"
                                                         placeholder="Email" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="subject">Тема</label>
+                                                    <label class="label" for="subject">{{__('xizmatlar19')}}</label>
                                                     <input type="text" class="form-control" name="subject"
-                                                        id="subject" placeholder="Тема" required>
+                                                        id="subject" placeholder="{{__('xizmatlar19')}}" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="Phone">Номер телефона</label>
+                                                    <label class="label" for="Phone">{{__('xizmatlar20')}}"</label>
                                                     <input type="number" class="form-control" name="Phone" id="Phone"
                                                         placeholder="+998 XX XXX XX XX" required>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-12 col-xl-12 col-md-12">
                                                 <div class="form-group">
-                                                    <label class="label" for="#">Сообщение</label>
+                                                    <label class="label" for="#">{{__('xizmatlar21')}}"</label>
                                                     <textarea name="message" class="form-control" id="message"
-                                                        cols="30" rows="4" placeholder="Сообщение" required></textarea>
+                                                        cols="30" rows="4" placeholder="{{__('xizmatlar21')}}" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-xxl-12 col-xl-12 col-md-12">
                                                 <div class="form-group">
-                                                    <button type="submit" class="btn btn-primary">Отправлять
-                                                        сообщения</button>
+                                                    <button type="submit" class="btn btn-primary">{{__('xizmatlar22')}}</button>
                                                     <div class="submitting"></div>
                                                 </div>
                                             </div>
@@ -215,12 +213,12 @@
     <!-- footer -->
     <footer>
         <div class="text-center">
-            <h4>43 Tafakkur ko'chasi, Тошкент</h4>
+            <h4>{{__('manzil')}} </h4>
             <h1>
-                <span>Tел:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
-                <span>Tел:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909307218">+998 (90) 930 72 18</a><br>
+                <span>{{__('phone')}}:</span> <a href="callto:+998909588172">+998 (90) 958 81 72</a>
             </h1>
-            <p>7 дней в неделю с 9:00 до 19:00</p>
+            <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
                 <a href="#" class="fab fa-twitter fa-2x"></a>
@@ -228,7 +226,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">Политика конфиденциальности</a>
+                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>
