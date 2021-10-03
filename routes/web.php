@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/','CategoryController@mainPage');
 Route::get('/catigory','CategoryController@categoryPage');
+Route::get('/about','CategoryController@aboutPage');
 // Route::get('/', function () {
 //     return view('front.index');
 // });
-Route::get('/about', function () {
-    return view('front.aboutPage');
-});
+// Route::get('/about', function () {
+//     return view('front.aboutPage');
+// });
 Route::get('/contact', function () {
     return view('front.contactPage');
 });

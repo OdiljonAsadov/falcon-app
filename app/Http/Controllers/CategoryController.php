@@ -32,9 +32,16 @@ class CategoryController extends Controller
     public function categoryPage()
     {
         $informations = Information::all();
-        $locale = app()->getLocale();
+        $locales = app()->getLocale();
 
-        return view('front.catigoryPage', compact('informations', 'locale'));
+        return view('front.catigoryPage', compact('informations', 'locales'));
+    }
+    public function aboutPage()
+    {
+        $informations = Information::all();
+        $locales = app()->getLocale();
+
+        return view('front.aboutPage', compact('informations', 'locales'));
     }
 
     /**

@@ -22,7 +22,7 @@
 <body>
     <!-- navbar -->
     <div class="nawbar container-fluid">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" style="width: 500px;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
                         style="height: 50px;"></a>
@@ -32,14 +32,49 @@
                     <i class="far fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between" style="margin-left:350px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">{{__('home')}}</a>
+                            <a class="nav-link active" aria-current="page" href="/" style="width: 120px;">{{__('home')}}</a>
                         </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" style="font-size: 17px; font-weight: 700; line-height: 30px; color: #999;" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Катигории
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">Детские площадки </a></li>
+                                                <li><a class="dropdown-item" href="#">Подъездные пути </a></li>
+                                                <li><a class="dropdown-item" href="#">Полы в гараже </a></li>
+                                                <li><a class="dropdown-item" href="#">Пешеходные дорожки </a></li>
+                                                <li><a class="dropdown-item" href="#">Окружение бассейна или терраса у бассейна </a></li>
+                                                <li><a class="dropdown-item" href="#">Дорожки для гольфа </a></li>
+                                                <li><a class="dropdown-item" href="#">Зоны с джакузи </a></li>
+                                                <li><a class="dropdown-item" href="#">Полы в спортзале </a></li>
+                                                <li><a class="dropdown-item" href="#"> Подвалы </a></li>
+                                                <li><a class="dropdown-item" href="#"> Детский сад </a></li>
+                                                <li><a class="dropdown-item" href="#"> Пандусы для инвалидных колясок </a></li>
+                                                <li><a class="dropdown-item" href="#"> Арены </a></li>
+                                                <li><a class="dropdown-item" href="#"> Патио </a></li>
+                                                <li><a class="dropdown-item" href="#"> Курсы Mini-Putt </a></li>
+                                                <li><a class="dropdown-item" href="#"> Ступени лестницы </a></li>
+                                                <li><a class="dropdown-item" href="#"> Балконы </a></li>
+                                                <li><a class="dropdown-item" href="#"> И более </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        {{-- <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li> --}}
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
                         </li> --}}
-                        <li class="nav-item"><a class="nav-link" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
+                        <li class="nav-item" ><a class="nav-link" style="width: 110px; padding-left: 15px;" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
                         </li>
@@ -49,6 +84,11 @@
                         <li class="nav-item">
                             <a href="/contact?language={{ Request::get('language') }}" class="nav-link">{{__('contact')}}</a>
                         </li>
+                        {{-- <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a>
+                            <p style="margin: 0; color: #999;">|</p>
+                            <a href="#" class="nav-link lang-ru" style="cursor: pointer;">Ру</a>
+                        </li> --}}
                         {{-- @foreach (config('app.available_locales') as $locale)
                             <li class="nav-item">
                                <a href="{{ request()->url() }}?language={{ $locale }}"
@@ -58,34 +98,19 @@
                             </li>
                         @endforeach --}}
                         @foreach ($locales as $locale)
-                            <a href="{{ request()->url() }}?language={{ $locale }}" class="nav-link" style="font-size: 20px;">{{ strtoupper($locale) }}</a>
+                            <a href="{{ request()->url() }}?language={{ $locale }}" class="nav-link"  style="font-size: 17px; font-weight: 700; line-height: 30px; color: #999;">{{ strtoupper($locale) }}</a>
                         @endforeach
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <p href="#" class="nav-link lang-uz" style="display: block; cursor: pointer;"
                                 onclick="showRu()">Uz</p>
                             <p href="#" class="nav-link lang-ru" style="display: none; cursor: pointer;"
                                 onclick="showUz()">
                                 Ру</p>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
         </nav>
     </div>
-    <script>
-        function showRu() {
-            var ru = document.querySelector(".lang-ru");
-            var uz = document.querySelector(".lang-uz");
-            ru.style.display = "block";
-            uz.style.display = "none";
-        }
-
-        function showUz() {
-            var uz = document.querySelector(".lang-uz");
-            var ru = document.querySelector(".lang-ru");
-            uz.style.display = "block";
-            ru.style.display = "none";
-        }
-    </script>
     <!-- navbar -->
     <!-- slider -->
     <div id="ninja-slider">
