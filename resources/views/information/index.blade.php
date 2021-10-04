@@ -12,8 +12,8 @@
             <th>Image_1</th>
             <th>Image_2</th>
             <th>Image_3</th>
-            <th>Summernote_uz</th>
-            <th>Summernote_ru</th>
+            {{-- <th>Summernote_uz</th> --}}
+            {{-- <th>Summernote_ru</th> --}}
            
         </tr>
         @foreach ($info as $inf)
@@ -25,8 +25,8 @@
                 <td><img src="{{ $inf->image_2 }}" alt="" style="height: 120px; width: 150px;"></td>
                 <td><img src="{{ $inf->image_3 }}" alt="" style="height: 120px; width: 150px;"></td>
                 {{-- <td>{{substr($inf->summernote_uz, 0, 250)."..."}}</td> --}}
-                <td>{!! $inf->summernote_uz!!}</td>
-                <td>{!! $inf->summernote_ru!!}</td>
+                {{-- <td>{!! $inf->summernote_uz!!}</td> --}}
+                {{-- <td>{!! $inf->summernote_ru!!}</td> --}}
                 
                
                 <td>

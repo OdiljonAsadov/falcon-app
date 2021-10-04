@@ -34,7 +34,7 @@ Route::get('/servise', function () {
 //     return view('front.catigoryPage');
 // });
 
-Route::get('/admin',function(){
+Route::get('/falconsystemplusadminpanel',function(){
     return view('index');
 });
 

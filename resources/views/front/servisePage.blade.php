@@ -39,29 +39,22 @@
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" style="font-size: 17px; font-weight: 700; line-height: 30px; color: #999;" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Катигории
+                                    {{__('category')}}
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><a class="dropdown-item" href="#">Детские площадки </a></li>
-                                                <li><a class="dropdown-item" href="#">Подъездные пути </a></li>
-                                                <li><a class="dropdown-item" href="#">Полы в гараже </a></li>
-                                                <li><a class="dropdown-item" href="#">Пешеходные дорожки </a></li>
-                                                <li><a class="dropdown-item" href="#">Окружение бассейна или терраса у бассейна </a></li>
-                                                <li><a class="dropdown-item" href="#">Дорожки для гольфа </a></li>
-                                                <li><a class="dropdown-item" href="#">Зоны с джакузи </a></li>
-                                                <li><a class="dropdown-item" href="#">Полы в спортзале </a></li>
-                                                <li><a class="dropdown-item" href="#"> Подвалы </a></li>
-                                                <li><a class="dropdown-item" href="#"> Детский сад </a></li>
-                                                <li><a class="dropdown-item" href="#"> Пандусы для инвалидных колясок </a></li>
-                                                <li><a class="dropdown-item" href="#"> Арены </a></li>
-                                                <li><a class="dropdown-item" href="#"> Патио </a></li>
-                                                <li><a class="dropdown-item" href="#"> Курсы Mini-Putt </a></li>
-                                                <li><a class="dropdown-item" href="#"> Ступени лестницы </a></li>
-                                                <li><a class="dropdown-item" href="#"> Балконы </a></li>
-                                                <li><a class="dropdown-item" href="#"> И более </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/1?language={{ Request::get('language') }}"> {{__('category1')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category2')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category3')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/6"> {{__('category4')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category5')}}</a></li>
+                                                <li><a class="dropdown-item" href="/information/show/5"> {{__('category6')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category7')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/1"> {{__('category8')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/2"> {{__('category9')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category10')}} </a></li>
                                             </ul>
                                         </div>
                                     </div>
