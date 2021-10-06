@@ -21,7 +21,7 @@
 <body>
     <!-- navbar -->
     <div class="nawbar container-fluid">
-        <nav class="navbar navbar-expand-lg" style="width: 500px;">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="../images/Logo.svg" alt="logo" class="img-fluid"
                         style="height: 50px;"></a>
@@ -31,9 +31,9 @@
                     <i class="far fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between" style="margin-left:400px;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/" style="width: 120px;">{{__('home')}}</a>
+                            <a class="nav-link" aria-current="page" href="/?language={{ Request::get('language') }}">{{__('home')}}</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -62,23 +62,22 @@
 
                             </div>
                         </li>
-                        {{-- <li class="nav-item"><a class="nav-link" href="/about">O нас</a></li> --}}
+                        {{-- <li class="nav-item"><a class="nav-link active" href="/about">O нас</a></li> --}}
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
                         </li> --}}
-                        <li class="nav-item" ><a class="nav-link" style="width: 110px; padding-left: 15px;" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/gallery?language={{ Request::get('language') }}">{{__('images')}}</a>
                         </li>
-                        <li class="nav-item">
+                         <li class="nav-item">
                             <a href="/contact?language={{ Request::get('language') }}" class="nav-link">{{__('contact')}}</a>
                         </li>
                         {{-- <li class="nav-item d-flex align-items-center" >
-                            <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a>
-                            <p style="margin: 0;">|</p>
+                            <a href="#" class="nav-link lang-uz" style="cursor: pointer;">Uz</a><p style="margin: 0;">|</p>
                             <a href="#" class="nav-link lang-ru" style="cursor: pointer;">Ру</a>
                         </li> --}}
                     </ul>

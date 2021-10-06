@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between" style="margin-left:350px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/" style="width: 120px;">{{__('home')}}</a>
+                            <a class="nav-link active" aria-current="page" href="/?language={{ Request::get('language') }}" style="width: 120px;">{{__('home')}}</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -191,65 +191,58 @@
         <div class="row">
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg1">
                 <div class="product">
-                    <h4>Покрытие детской площадки</h4>
-                    <p>Эта система, состоящая из основы из 100% переработанного SBR (бутадиенстирольного каучука) и
-                        полиуретана.</p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page1')}}</h4>
+                    <p>{{__('1page2')}}</p>
+                    <a href="/information/show/1">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg2">
                 <div class="product">
-                    <h4>Переработанная резиновая плитка</h4>
-                    <p>Предлагаем полный выбор плиток для удовлетворения конкретных потребностей вашего объекта, в том
-                        числе Interlocking
-                        Плитка и стандартная плитка. </p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page3')}}</h4>
+                    <p>{{__('1page4')}}</p>
+                    <a href="/information/show/1">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg3">
                 <div class="product">
-                    <h4>Поверхность водной игры</h4>
-                    <p>Нескользящее покрытие для открытых и закрытых аквапарков, брызг, бассейнов и зон спа</p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page5')}}</h4>
+                    <p>{{__('1page6')}}</p>
+                    <a href="/information/show/1">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg4">
                 <div class="product">
-                    <h4>Эластофлор Ролл-Заливка</h4>
-                    <p>Исключительная опора, точная реакция на мяч и идеальная амортизация.</p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page1')}}</h4>
+                    <p>{{__('1page2')}}</p>
+                    <a href="/information/show/1">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg5">
                 <div class="product">
-                    <h4>Покрытие детской площадки</h4>
-                    <p>Эта система состоит из основы из 100% переработанного SBR (бутадиен-стирольного каучука).
-                        и полиуретан</p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page8')}}</h4>
+                    <p>{{__('1page10')}}</p>
+                    <a href="/information/show/2">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg6">
                 <div class="product">
-                    <h4>Переработанная резиновая плитка</h4>
-                    <p>Предлагаем полный выбор плиток для удовлетворения конкретных потребностей вашего объекта, в том
-                        числе Interlocking
-                        Плитка и стандартная плитка. </p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page9')}}</h4>
+                    <p>{{__('1page10')}}</p>
+                    <a href="/information/show/5">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg7">
                 <div class="product">
-                    <h4>Поверхность водной игры</h4>
-                    <p>Нескользящее покрытие для открытых и закрытых аквапарков, брызг, бассейнов и зон спа
-                    </p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page8')}}</h4>
+                    <p>{{__('1page10')}}</p>
+                    <a href="/information/show/2">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg8">
                 <div class="product">
-                    <h4>Эластофлор Ролл-Заливка</h4>
-                    <p>Исключительная опора, точная реакция на мяч и идеальная амортизация.</p>
-                    <a href="#">Подробнее</a>
+                    <h4>{{__('1page7')}}</h4>
+                    <p>{{__('1page10')}}</p>
+                    <a href="/information/show/6">{{__('1page0')}}</a>
                 </div>
             </div>
         </div>
@@ -267,10 +260,10 @@
                         <ul>
                             <li><a href="/information/show/1"> {{__('category1')}} </a></li>
 
-                            <li><a href="//information/show/1"> {{__('category2')}} </a></li>
-                            <li><a href="/information/show/1"> {{__('category3')}} </a></li>
-                            <li><a href="/information/show/1"> {{__('category4')}} </a></li>
-                            <li><a href="/information/show/1"> {{__('category5')}} </a></li>
+                            <li><a href="//information/show/3"> {{__('category2')}} </a></li>
+                            <li><a href="/information/show/3"> {{__('category3')}} </a></li>
+                            <li><a href="/information/show/6"> {{__('category4')}} </a></li>
+                            <li><a href="/information/show/3"> {{__('category5')}} </a></li>
                             {{-- <li><a href="#"> {{__('category1')}} </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
                             <li><a href="#">Полы в спортзале </a></li> --}}
@@ -278,11 +271,11 @@
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li><a href="/information/show/1">  {{__('category6')}}  </a></li>
-                            <li><a href="/information/show/1">  {{__('category7')}} </a></li>
+                            <li><a href="/information/show/5">  {{__('category6')}}  </a></li>
+                            <li><a href="/information/show/3">  {{__('category7')}} </a></li>
                             <li><a href="/information/show/1">  {{__('category8')}}  </a></li>
-                            <li><a href="/information/show/1">  {{__('category9')}}  </a></li>
-                            <li><a href="/information/show/1">  {{__('category10')}}  </a></li>
+                            <li><a href="/information/show/2">  {{__('category9')}}  </a></li>
+                            <li><a href="/information/show/3">  {{__('category10')}}  </a></li>
                             {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>
@@ -317,11 +310,12 @@
                 <div class="links row" data-aos="zoom-in-up">
                     <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
                         <ul>
-                            <li><a href="#">{{__('category1')}}</a></li>
-                            <li><a href="#">{{__('category2')}} </a></li>
-                            <li><a href="#">{{__('category3')}} </a></li>
-                            <li><a href="#">{{__('category4')}}</a></li>
-                            <li><a href="#">{{__('category5')}}</a></li>
+                            <li><a href="/information/show/1"> {{__('category1')}} </a></li>
+
+                            <li><a href="//information/show/3"> {{__('category2')}} </a></li>
+                            <li><a href="/information/show/3"> {{__('category3')}} </a></li>
+                            <li><a href="/information/show/6"> {{__('category4')}} </a></li>
+                            <li><a href="/information/show/3"> {{__('category5')}} </a></li>
                             {{-- <li><a href="#">Дорожки для гольфа </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
                             <li><a href="#">Полы в спортзале </a></li> --}}
@@ -329,11 +323,11 @@
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
-                            <li><a href="#"> {{__('category6')}} </a></li>
-                            <li><a href="#"> {{__('category7')}}</a></li>
-                            <li><a href="#"> {{__('category8')}} </a></li>
-                            <li><a href="#"> {{__('category9')}} </a></li>
-                            <li><a href="#"> {{__('category10')}} </a></li>
+                            <li><a href="/information/show/5">  {{__('category6')}}  </a></li>
+                            <li><a href="/information/show/3">  {{__('category7')}} </a></li>
+                            <li><a href="/information/show/1">  {{__('category8')}}  </a></li>
+                            <li><a href="/information/show/2">  {{__('category9')}}  </a></li>
+                            <li><a href="/information/show/3">  {{__('category10')}}  </a></li>
                             {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>

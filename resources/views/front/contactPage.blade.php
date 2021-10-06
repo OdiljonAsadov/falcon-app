@@ -135,7 +135,7 @@
                                         <span class="fa fa-paper-plane"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>{{__('xizmatlar15')}}:</span> <a href="mailto:#">Falcon.uz</a></p>
+                                        <p><span>{{__('xizmatlar15')}}:</span> <a href="mailto:#">Falconsystem</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                                         <span class="fa fa-globe"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>{{__('xizmatlar16')}}</span> <a href="Falcon.uz">Falcon.uz</a></p>
+                                        <p><span>{{__('xizmatlar16')}}</span> <a href="Falcon.uz">Falconsystem.uz</a></p>
                                     </div>
                                 </div>
                             </div>
