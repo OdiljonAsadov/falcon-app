@@ -66,9 +66,9 @@
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="/catigory">Категории</a>
                         </li> --}}
-                        <li class="nav-item"><a class="nav-link active" href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
+                        <li class="nav-item"><a class="nav-link " href="/about?language={{ Request::get('language') }}">{{__('about')}}</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
+                            <a class="nav-link active" href="/servise?language={{ Request::get('language') }}">{{__('serves')}}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/gallery?language={{ Request::get('language') }}">{{__('images')}}</a>
@@ -215,7 +215,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
+                <span> © 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>
@@ -224,7 +224,7 @@
     {{-- connect with me --}}
     <div class="body">
         <div class='phone'>
-            <a href="tel:+998337730580" class="fas fa-phone fa-1x"></a>
+            <a href="tel:+998909307218" class="fas fa-phone fa-1x"></a>
         </div>
         <div class="circle1"></div>
         <div class="circle2"></div>

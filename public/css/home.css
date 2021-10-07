@@ -34,7 +34,7 @@ body .row {
 }
 
 .navbar-nav {
-    align-items: center;
+    align-items: left;
 }
 
 .navbar-collapse {
@@ -639,6 +639,7 @@ footer h6 a:hover {
     footer h1 {
         font-size: 25px;
     }
+   
 }
 
 /* mobile device */
@@ -697,6 +698,7 @@ footer h6 a:hover {
     footer .icons a {
         font-size: 30px;
     }
+    
 }
 
 @media(min-width: 375px) and (max-width: 424px) {
@@ -753,6 +755,7 @@ footer h6 a:hover {
     footer .icons a {
         font-size: 30px;
     }
+    
 }
 
 @media(min-width: 320px) and (max-width: 374px) {
@@ -809,4 +812,5 @@ footer h6 a:hover {
     footer .icons a {
         font-size: 30px;
     }
+    
 }

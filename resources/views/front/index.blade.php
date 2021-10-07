@@ -32,7 +32,7 @@
                     <i class="far fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between" style="margin-left:350px;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between" >
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/?language={{ Request::get('language') }}" style="width: 120px;">{{__('home')}}</a>
                         </li>
@@ -356,7 +356,7 @@
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
-                <span>RedFox © 2021. </span><a href="#">{{__('siyosat')}}</a>
+                <span>© 2021. </span><a href="#">{{__('siyosat')}}</a>
             </h6>
         </div>
     </footer>
@@ -365,7 +365,7 @@
     {{-- connect with me --}}
     <div class="body">
         <div class='phone'>
-            <a href="tel:+998337730580" class="fas fa-phone fa-1x"></a>
+            <a href="tel:+998909307218" class="fas fa-phone fa-1x"></a>
         </div>
         <div class="circle1"></div>
         <div class="circle2"></div>
