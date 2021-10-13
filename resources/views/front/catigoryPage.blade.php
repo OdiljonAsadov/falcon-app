@@ -46,15 +46,22 @@
                                         <div class="col-md-6">
                                             <ul>
                                                 <li><a class="dropdown-item" href="/information/show/1?language={{ Request::get('language') }}"> {{__('category1')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category2')}} </a></li>
+                                                {{-- <li><a class="dropdown-item" href="/information/show/3"> {{__('category2')}} </a></li> --}}
                                                 <li><a class="dropdown-item" href="/information/show/3"> {{__('category3')}} </a></li>
                                                 <li><a class="dropdown-item" href="/information/show/6"> {{__('category4')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category5')}}</a></li>
+                                                <li><a class="dropdown-item" href="/information/show/7"> {{__('category5')}}</a></li>
                                                 <li><a class="dropdown-item" href="/information/show/5"> {{__('category6')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category7')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/1"> {{__('category8')}} </a></li>
+                                                {{-- <li><a class="dropdown-item" href="/information/show/3"> {{__('category7')}} </a></li> --}}
+                                                <li><a class="dropdown-item" href="/information/show/8"> {{__('category8')}} </a></li>
                                                 <li><a class="dropdown-item" href="/information/show/2"> {{__('category9')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category10')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/9"> {{__('category10')}} </a></li>
+                                                {{-- <li><a class="dropdown-item" href="#"> Пандусы для инвалидных колясок </a></li>
+                                                <li><a class="dropdown-item" href="#"> Арены </a></li>
+                                                <li><a class="dropdown-item" href="#"> Патио </a></li>
+                                                <li><a class="dropdown-item" href="#"> Курсы Mini-Putt </a></li>
+                                                <li><a class="dropdown-item" href="#"> Ступени лестницы </a></li>
+                                                <li><a class="dropdown-item" href="#"> Балконы </a></li>
+                                                <li><a class="dropdown-item" href="#"> И более </a></li> --}}
                                             </ul>
                                         </div>
                                     </div>
@@ -123,8 +130,8 @@
             <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
-                <a href="#" class="fab fa-twitter fa-2x"></a>
-                <a href="#" class="fab fa-google-plus-g fa-2x"></a>
+                <a href="#" class="fab fa-telegram fa-2x"></a>
+                {{-- <a href="#" class="fab fa-google-plus-g fa-2x"></a> --}}
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>

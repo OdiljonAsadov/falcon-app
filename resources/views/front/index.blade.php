@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
     <!-- anime -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link href="{{ asset('css/ninja-slider.css') }}" rel="stylesheet" type="text/css" />
@@ -47,15 +48,15 @@
                                         <div class="col-md-6">
                                             <ul>
                                                 <li><a class="dropdown-item" href="/information/show/1?language={{ Request::get('language') }}"> {{__('category1')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category2')}} </a></li>
+                                                {{-- <li><a class="dropdown-item" href="/information/show/3"> {{__('category2')}} </a></li> --}}
                                                 <li><a class="dropdown-item" href="/information/show/3"> {{__('category3')}} </a></li>
                                                 <li><a class="dropdown-item" href="/information/show/6"> {{__('category4')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category5')}}</a></li>
+                                                <li><a class="dropdown-item" href="/information/show/7"> {{__('category5')}}</a></li>
                                                 <li><a class="dropdown-item" href="/information/show/5"> {{__('category6')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category7')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/1"> {{__('category8')}} </a></li>
+                                                {{-- <li><a class="dropdown-item" href="/information/show/3"> {{__('category7')}} </a></li> --}}
+                                                <li><a class="dropdown-item" href="/information/show/8"> {{__('category8')}} </a></li>
                                                 <li><a class="dropdown-item" href="/information/show/2"> {{__('category9')}} </a></li>
-                                                <li><a class="dropdown-item" href="/information/show/3"> {{__('category10')}} </a></li>
+                                                <li><a class="dropdown-item" href="/information/show/9"> {{__('category10')}} </a></li>
                                                 {{-- <li><a class="dropdown-item" href="#"> Пандусы для инвалидных колясок </a></li>
                                                 <li><a class="dropdown-item" href="#"> Арены </a></li>
                                                 <li><a class="dropdown-item" href="#"> Патио </a></li>
@@ -213,7 +214,7 @@
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg4">
                 <div class="product">
                     <h4>{{__('1page1')}}</h4>
-                    <p>{{__('1page2')}}</p>
+                    <p>{{__('1page21')}}</p>
                     <a href="/information/show/1">{{__('1page0')}}</a>
                 </div>
             </div>
@@ -227,21 +228,21 @@
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg6">
                 <div class="product">
                     <h4>{{__('1page9')}}</h4>
-                    <p>{{__('1page10')}}</p>
+                    <p>{{__('1page11')}}</p>
                     <a href="/information/show/5">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg7">
                 <div class="product">
                     <h4>{{__('1page8')}}</h4>
-                    <p>{{__('1page10')}}</p>
+                    <p>{{__('1page12')}}</p>
                     <a href="/information/show/2">{{__('1page0')}}</a>
                 </div>
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 bg8">
                 <div class="product">
                     <h4>{{__('1page7')}}</h4>
-                    <p>{{__('1page10')}}</p>
+                    <p>{{__('1page13')}}</p>
                     <a href="/information/show/6">{{__('1page0')}}</a>
                 </div>
             </div>
@@ -260,10 +261,10 @@
                         <ul>
                             <li><a href="/information/show/1"> {{__('category1')}} </a></li>
 
-                            <li><a href="//information/show/3"> {{__('category2')}} </a></li>
+                            {{-- <li><a href="//information/show/3"> {{__('category2')}} </a></li> --}}
                             <li><a href="/information/show/3"> {{__('category3')}} </a></li>
                             <li><a href="/information/show/6"> {{__('category4')}} </a></li>
-                            <li><a href="/information/show/3"> {{__('category5')}} </a></li>
+                            <li><a href="/information/show/7"> {{__('category5')}} </a></li>
                             {{-- <li><a href="#"> {{__('category1')}} </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
                             <li><a href="#">Полы в спортзале </a></li> --}}
@@ -272,10 +273,10 @@
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
                             <li><a href="/information/show/5">  {{__('category6')}}  </a></li>
-                            <li><a href="/information/show/3">  {{__('category7')}} </a></li>
-                            <li><a href="/information/show/1">  {{__('category8')}}  </a></li>
+                            {{-- <li><a href="/information/show/3">  {{__('category7')}} </a></li> --}}
+                            <li><a href="/information/show/8">  {{__('category8')}}  </a></li>
                             <li><a href="/information/show/2">  {{__('category9')}}  </a></li>
-                            <li><a href="/information/show/3">  {{__('category10')}}  </a></li>
+                            <li><a href="/information/show/9">  {{__('category10')}}  </a></li>
                             {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>
@@ -285,7 +286,7 @@
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12">
-                <img src="./images/childs.jpg" alt="childs" class="img-fluid">
+                <img src="./images/1111.jpg" alt="childs" class="img-fluid" style="height: 500px;width: 700px;">
             </div>
         </div>
     </div>
@@ -312,10 +313,10 @@
                         <ul>
                             <li><a href="/information/show/1"> {{__('category1')}} </a></li>
 
-                            <li><a href="//information/show/3"> {{__('category2')}} </a></li>
+                            {{-- <li><a href="//information/show/3"> {{__('category2')}} </a></li> --}}
                             <li><a href="/information/show/3"> {{__('category3')}} </a></li>
                             <li><a href="/information/show/6"> {{__('category4')}} </a></li>
-                            <li><a href="/information/show/3"> {{__('category5')}} </a></li>
+                            <li><a href="/information/show/7"> {{__('category5')}} </a></li>
                             {{-- <li><a href="#">Дорожки для гольфа </a></li>
                             <li><a href="#">Зоны с джакузи </a></li>
                             <li><a href="#">Полы в спортзале </a></li> --}}
@@ -324,10 +325,10 @@
                     <div class="col-xxl-6 col-xl-6 col-md-12">
                         <ul>
                             <li><a href="/information/show/5">  {{__('category6')}}  </a></li>
-                            <li><a href="/information/show/3">  {{__('category7')}} </a></li>
-                            <li><a href="/information/show/1">  {{__('category8')}}  </a></li>
+                            {{-- <li><a href="/information/show/3">  {{__('category7')}} </a></li> --}}
+                            <li><a href="/information/show/8">  {{__('category8')}}  </a></li>
                             <li><a href="/information/show/2">  {{__('category9')}}  </a></li>
-                            <li><a href="/information/show/3">  {{__('category10')}}  </a></li>
+                            <li><a href="/information/show/9">  {{__('category10')}}  </a></li>
                             {{-- <li><a href="#"> Курсы Mini-Putt </a></li>
                             <li><a href="#"> Ступени лестницы </a></li>
                             <li><a href="#"> Балконы </a></li>
@@ -351,8 +352,8 @@
             <p>{{__('workTime')}}</p>
             <div class="icons">
                 <a href="#" class="fab fa-facebook-f fa-2x"></a>
-                <a href="#" class="fab fa-twitter fa-2x"></a>
-                <a href="#" class="fab fa-google-plus-g fa-2x"></a>
+                <a href="#" class="fab fa-telegram fa-2x"></a>
+                {{-- <a href="#" class="fab fa-google-plus-g fa-2x"></a> --}}
                 <a href="#" class="fab fa-instagram fa-2x"></a>
             </div>
             <h6>
